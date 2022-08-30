@@ -37,8 +37,7 @@
 }
 
 /* Standard values */
-html,
-body {
+html, body {
     font-size: 16px;
     line-height: 1.5;
     font-family: var(--font-roboto);
@@ -50,22 +49,59 @@ body {
 .top-menu {
     background-color: var(--color-theme);
     color: var(--color-white);
-    height: 3rem;
-    display: flex;
-    align-items: center;
 }
-    .top-menu>.container {
+    .top-menu > .container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
         .top-menu a {
             color: var(--color-white);
             text-decoration: none;
+            margin: 0 1.2rem;
         }
             .top-menu a:hover {
                 color: var(--color-theme-dark);
             }
+    
+    .top-menu .site-settings{
+        display: flex;
+    }
+        .top-menu .site-settings .dropdown-theme button {
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            border: none;
+        }
+            .top-menu .site-settings .dropdown-theme button:hover {
+                color: var(--color-theme-dark);
+            }
+                .top-menu .site-settings .dropdown-menu{
+                    background-color: var(--color-theme-dark);
+                    color: var(--color-white);
+                }
+                    .top-menu .site-settings .dropdown-menu .dropdown-item{
+                        width: 10em;
+                        margin: 0;
+                    }
+                        .top-menu .site-settings .dropdown-menu .dropdown-item:hover{
+                            background-color: var(--color-theme);
+                            color: var(--color-white);
+                        }
 
+    .top-menu .menu-links {
+            padding: 0.8rem 0;
+    }
+        .top-menu .menu-links .social-media {
+            margin-left: 1rem;
+        }
+            .top-menu .menu-links .social-media a {
+                margin: 0 0.3em;
+            }
+                .top-menu .menu-links .social-media a:last-child {
+                    margin: 0 0 0 0.3rem;
+                }
+
+                
 /* Responsive */
 @media (min-width: 768px) {}
 
