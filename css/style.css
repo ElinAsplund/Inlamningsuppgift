@@ -80,10 +80,12 @@ html, body {
     .top-menu .site-settings{
         display: flex;
     }    
-        .top-menu .site-settings .dropdown-theme button {
-            background-color: var(--color-theme);
-            color: var(--color-white);
-            border: none;
+    .top-menu .site-settings .dropdown-theme button {
+        background-color: var(--color-theme);
+        color: var(--color-white);
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        border: none;
         }
             .top-menu .site-settings .dropdown-theme button:hover {
                 color: var(--color-theme-dark);
@@ -91,6 +93,7 @@ html, body {
                 .top-menu .site-settings .dropdown-menu{
                     background-color: var(--color-theme-dark);
                     color: var(--color-white);
+                    border-radius: 0;
                 }
                     .top-menu .site-settings .dropdown-menu .dropdown-item{
                         width: 10em;
@@ -193,6 +196,7 @@ html, body {
             .main-menu .browse-categories .dropdown-menu {
                 background-color: var(--color-theme-dark);
                 width: 100%;
+                border-radius: 0;
             }
                 .main-menu .browse-categories .dropdown-item {
                     background-color: var(--color-theme-dark);
