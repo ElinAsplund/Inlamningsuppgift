@@ -36,6 +36,35 @@
     --border-radius-rounded: 50%;
 }
 
+/* Standard values */
+html,
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-theme-dark);
+}
+
+/* top-menu */
+.top-menu {
+    background-color: var(--color-theme);
+    color: var(--color-white);
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+    .top-menu>.container {
+        display: flex;
+        justify-content: space-between;
+    }
+        .top-menu a {
+            color: var(--color-white);
+            text-decoration: none;
+        }
+            .top-menu a:hover {
+                color: var(--color-theme-dark);
+            }
 
 /* Responsive */
 @media (min-width: 768px) {}
