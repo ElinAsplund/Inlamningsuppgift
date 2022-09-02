@@ -45,12 +45,11 @@ html, body {
                 color: var(--color-theme-dark);
             }
     
-    /*-----------------.top-menu > .site-settings------------------ */
+/*-----------------.top-menu > .site-settings------------------ */
     .top-menu .site-settings{
         display: flex;
         /* height: 100%; ---> I WANT THE .SITE-SETTING TO TAKE ON THE HEIGHT OF THE .CONTAINER*/
     }    
-  
     .top-menu .site-settings .dropdown-theme button {
         background-color: var(--color-theme);
         color: var(--color-white);
@@ -77,19 +76,14 @@ html, body {
                             background-color: var(--color-theme);
                             color: var(--color-white);
                         }
-    /*---------------------.top-menu > .menu-links-------------------- */
+/*---------------------.top-menu > .top-menu-right-------------------- */
+
         .top-menu .menu-links {
             display: none;
         }
         .top-menu .social-media {
             display: none;
         }
-            .top-menu .social-media a {
-                margin: 0 0.3em;
-            }
-                .top-menu .social-media a:last-child {
-                    margin: 0 0 0 0.3rem;
-                }
 
 /*----------------------------MAIN-MENY----------------------------*/
 .main-menu {
@@ -103,38 +97,45 @@ html, body {
         padding-top: 2.2rem;
         padding-bottom: 2.2rem;
     }
-    .main-menu .brand{
-        flex: 2;
-    }
-    .main-menu .search{
-        flex: 4;
-    }
-    /* -----------------.main-menu > .meny-links------------------- */
+
+/* -----------------.main-menu > .meny-links------------------- */
     .main-menu .menu-links{
-            flex: 4;
             display: flex;
             justify-content: end;
             align-items: center;
         }
 
-        .main-menu .menu-links span{
-            display: none;
+        .main-menu .brand a{
+            display: flex;
+            align-items: center;
         }
-            .main-menu .menu-links .menu-link{
+        .main-menu .brand a > img{
+            width: 100%;
+            padding-right: 0.5rem;
+        }
+            .main-menu .menu-links span{
                 display: none;
             }
-                .main-menu .menu-links .menu-link:hover{
-                    color: var(--color-theme);
-                }
-                .main-menu .menu-links .menu-link:first-child{
-                    margin-right: -0.15rem;
-                }
-                .main-menu .menu-links .menu-link:last-child{
-                    margin-right: 0;
-                }
-            .main-menu .menu-links .menu-link i{
-                font-size: 1.3rem;
+            
+        .main-menu .menu-links .menu-link{
+            color: var(--color-theme-dark);
+            text-decoration: none;
+            margin: 0 0.3rem;
+        }          
+            .main-menu .menu-links .menu-link:hover{
+                color: var(--color-theme);
             }
+            .main-menu .menu-links .menu-link:first-child{
+                margin-right: -0.15rem;
+            }
+            .main-menu .menu-links .menu-link:last-child{
+                margin-right: 0;
+            }
+
+        .main-menu .menu-links .menu-link i{
+            font-size: 1.3rem;
+        }
+
     /*------------------.main-menu > nav---------------------------- */
     .main-menu nav {
         border-top: 1px solid var(--color-grey-2);
@@ -190,26 +191,40 @@ html, body {
                 .main-menu .special-offer {
                     flex: 7;
                     display: flex;
-        justify-content: end;
-        align-items: center;
-    }
+                    justify-content: end;
+                    align-items: center;
+                }
 
 /*----------------------------RESPONSIVE---------------------------------*/
+
 /* -----------576px------------ */
 @media (min-width: 576px) {
-    .main-menu .menu-links .menu-link{
-        display: block;
-        color: var(--color-theme-dark);
-        text-decoration: none;
-        margin: 0 0.3rem;
-    }
-
+    
+    /* top-menu */
     .top-menu .menu-links {
         display: block;
         padding: 0.8rem 0;
         display: flex;
+    }       
+        .top-menu .top-menu-right .menu-links a:last-child{
+            margin-right: 0;
+        }
+
+    /* main-menu */
+    .main-menu .brand a > img{
+        padding-right: 0;
+        width: auto;
+        height: 100%;
     }
-    
+    .main-menu .brand{
+        flex: 2;
+    }
+    .main-menu .search{
+        flex: 4;
+    }
+    .main-menu .menu-links{
+        flex: 3.5;
+    }
 }
 
 /* -----------768px------------ */
@@ -220,37 +235,37 @@ html, body {
 /* -----------992px------------ */
 @media (min-width: 992px) {
     
-    .top-menu .social-media {
+    /* top-menu */
+    .top-menu .top-menu-right{
+        display: flex;
+        align-items: center;
+    }
+        .top-menu .top-menu-right .menu-links a:last-child{
+            margin-right: 1.2rem;
+        }
+
+    .top-menu .top-menu-right .social-media {
         display: block;
         margin-left: 1rem;
     }
-    
-.top-menu .social-media {
-    margin-left: 1rem;
-}
-.top-menu.social-media a {
-    margin: 0 0.3em;
-}
-.top-menu .social-media a:last-child {
-    margin: 0 0 0 0.3rem;
-}
-.top-menu .container .top-menu-right{
-    display: flex;
-    align-items: center;
-}
+        .top-menu .top-menu-right .social-media a {
+            margin: 0 0.3em;
+        }
+            .top-menu .top-menu-right .social-media a:last-child {
+                margin: 0 0 0 0.3rem;
+            }
 
-.main-menu .menu-links .menu-link:first-child{
-    margin-right: 1rem;
-}
-.main-menu .menu-links span{
-    display: inline-block;
-}
-
-.main-menu .menu-links .menu-link{
-    margin: 0 0.8rem;
-}
-
-}
+    /* main-menu */
+    .main-menu .menu-links .menu-link{
+        margin: 0 0.8rem;
+    }
+        .main-menu .menu-links .menu-link:first-child{
+            margin-right: 1rem;
+        }
+            .main-menu .menu-links span{
+                display: inline-block;
+            }
+    }
 
 /* -----------1200px------------ */
 @media (min-width: 1200px) {
