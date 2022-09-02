@@ -28,11 +28,13 @@ html, body {
 .top-menu {
     background-color: var(--color-theme);
     color: var(--color-white);
+    height: 100%;
 }
     .top-menu > .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 100%;
     }
         .top-menu a {
             color: var(--color-white);
@@ -46,12 +48,15 @@ html, body {
     /*-----------------.top-menu > .site-settings------------------ */
     .top-menu .site-settings{
         display: flex;
+        height: 100%;
     }    
+  
     .top-menu .site-settings .dropdown-theme button {
         background-color: var(--color-theme);
         color: var(--color-white);
-        padding-top: 0.8rem;
-        padding-bottom: 0.8rem;
+        height: 100%;
+        padding: 0.8rem 0;
+        margin: -1px;
         border: none;
         }
             .top-menu .site-settings .dropdown-theme button:hover {
@@ -106,21 +111,23 @@ html, body {
     }
     /* -----------------.main-menu > .meny-links------------------- */
     .main-menu .menu-links{
-            flex: 3;
+            flex: 4;
             display: flex;
             justify-content: end;
             align-items: center;
         }
+
+        .main-menu .menu-links span{
+            display: none;
+        }
             .main-menu .menu-links .menu-link{
-                color: var(--color-theme-dark);
-                text-decoration: none;
-                margin: 0 0.8rem;
+                display: none;
             }
                 .main-menu .menu-links .menu-link:hover{
                     color: var(--color-theme);
                 }
                 .main-menu .menu-links .menu-link:first-child{
-                    margin-right: 1rem;
+                    margin-right: -0.15rem;
                 }
                 .main-menu .menu-links .menu-link:last-child{
                     margin-right: 0;
@@ -188,9 +195,18 @@ html, body {
     }
 
 /*----------------------------RESPONSIVE---------------------------------*/
+/* -----------576px------------ */
 @media (min-width: 576px) {
 
+    .main-menu .menu-links .menu-link{
+        display: block;
+        color: var(--color-theme-dark);
+        text-decoration: none;
+        margin: 0 0.3rem;
+    }
+
 }
+/* -----------768px------------ */
 @media (min-width: 768px) {
     .top-menu .social-media {
         display: block;
@@ -207,6 +223,7 @@ html, body {
                 margin: 0 0 0 0.3rem;
             }
 }
+/* -----------992px------------ */
 @media (min-width: 992px) {
     .top-menu .container .top-menu-right{
         display: flex;
@@ -216,11 +233,27 @@ html, body {
     .top-menu .menu-links {
         display: block;
         padding: 0.8rem 0;
+        display: flex;
 }
+
+.main-menu .menu-links .menu-link:first-child{
+    margin-right: 1rem;
 }
+
+.main-menu .menu-links span{
+    display: inline-block;
+}
+
+.main-menu .menu-links .menu-link{
+    margin: 0 0.8rem;
+}
+
+}
+/* -----------1200px------------ */
 @media (min-width: 1200px) {
  
 }
+/* -----------1400px------------ */
 @media (min-width: 1400px) {
  
 }

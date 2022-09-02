@@ -16,30 +16,30 @@
         <div class="top-menu">
             <div class="container">
                 <!-- site-settings -->
-                <div class="site-settings">
-                    <div class="dropdown dropdown-theme me-3">
-                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span id="selected-language">
-                                    ENG <i class="fa-solid fa-chevron-down"></i>
+                    <div class="site-settings">
+                        <div class="dropdown dropdown-theme me-3">
+                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span id="selected-language">
+                                        ENG <i class="fa-solid fa-chevron-down"></i>
+                                    </span>
+                            </button>
+                            <ul id="language" class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">ENG</a></li>
+                                <li><a class="dropdown-item" href="#">SWE</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown dropdown-theme me-3">
+                            <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span id="selected-currency">
+                                    EUR <i class="fa-solid fa-chevron-down"></i>
                                 </span>
-                        </button>
-                        <ul id="language" class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">ENG</a></li>
-                            <li><a class="dropdown-item" href="#">SWE</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown dropdown-theme me-3">
-                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span id="selected-currency">
-                                EUR <i class="fa-solid fa-chevron-down"></i>
-                            </span>
-                        </button>
-                        <ul id="currencies" class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">EUR</a></li>
-                            <li><a class="dropdown-item" href="#">USD</a></li>
-                            <li><a class="dropdown-item" href="#">SEK</a></li>
-                        </ul>
-                    </div>
+                            </button>
+                            <ul id="currencies" class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                <li><a class="dropdown-item" href="#">SEK</a></li>
+                            </ul>
+                        </div>
                 </div>
                 <div class="top-menu-right">
                     <!-- menu-links -->
@@ -60,7 +60,7 @@
             </div>
         </div>
 <!--MAIN-MENU-------------------------------------------------------------------------------->
-        <div class="main-menu d-none">
+        <div class="main-menu">
             <div class="container">
                 <!-- brand -->
                 <div class="brand">
@@ -70,16 +70,14 @@
                 <div class="search"></div>
                 <!-- menu-links -->
                 <div class="menu-links">
-                    <a href="#" class="menu-link"><i class="fa-regular fa-user me-2"></i> My account</a>
+                    <a href="#" class="menu-link"><i class="fa-regular fa-user me-2"></i><span>My account</span></a>
                     <a href="#" class="menu-link"><i class="fa-regular fa-heart"></i></a>
                     <a href="#" class="menu-link"><i class="fa-regular fa-shuffle"></i></a>
-                    <a href="#" class="menu-link"><i class="fa-regular fa-cart-shopping me-2"></i>
-                        <span id="cart-total">€9999.00</span>
-                    </a>
+                    <a href="#" class="menu-link"><i class="fa-regular fa-cart-shopping me-2"></i><span id="cart-total">€9999.00</span></a>
                 </div>
             </div>
             <!-- nav -->
-            <nav>
+            <nav class="d-none">
                 <div class="container">
                     <!-- browse-categories -->
                     <div class="browse-categories">
