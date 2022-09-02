@@ -120,6 +120,8 @@ html, body {
             color: var(--color-theme-dark);
             text-decoration: none;
             margin: 0 0.3rem;
+            display: flex;
+            align-items: center;
         }          
             .main-menu .menu-links .menu-link:hover{
                 color: var(--color-theme);
@@ -222,7 +224,7 @@ html, body {
         flex: 4;
     }
     .main-menu .menu-links{
-        flex: 3.5;
+        flex: 4;
     }
 }
 
