@@ -1,8 +1,8 @@
-/* -------------imported fonts and rooted variables------------------------------- */
+/* -------------imported fonts and root variables------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
-@import url(variables.css);
+@import url('variables.css');
 
-/*-------------------------STANDARD VALUES--------------------------*/
+/*----------------------------STANDARD VALUES----------------------------*/
 html, body {
     font-size: 16px;
     line-height: 1.5;
@@ -24,7 +24,7 @@ html, body {
       color: var(--color-white);  
     }
 
-/*----------------------------TOP-MENU---------------------------- */
+/*-------------------------------TOP-MENU------------------------------- */
 .top-menu {
     background-color: var(--color-theme);
     color: var(--color-white);
@@ -75,7 +75,7 @@ html, body {
             .top-menu .site-settings .dropdown-theme button:hover {
                 color: var(--color-theme-dark);
             }
-/*---------------------.top-menu > .top-menu-right-------------------- */
+/*------------------.top-menu > .top-menu-right---------------- */
     .top-menu .menu-links {
         display: none;
     }
@@ -83,7 +83,7 @@ html, body {
         display: none;
     }
 
-/*----------------------------MAIN-MENY----------------------------*/
+/*-------------------------------MAIN-MENY-------------------------------*/
 .main-menu {
     background-color: var(--color-white);
     color: var(--color-theme-dark);
@@ -138,7 +138,7 @@ html, body {
                 font-size: 1.2rem;
             }
 
-/*------------------.main-menu > nav---------------------------- */
+/*------------------.main-menu > nav--------------------------- */
     .main-menu nav {
         border-top: 1px solid var(--color-grey-2);
         border-bottom: 1px solid var(--color-grey-2);
@@ -148,7 +148,7 @@ html, body {
             justify-content: space-between;
             align-items: center;
         }
-/*---------------.main-menu > .browse-categories-------------------*/
+/*----------------.main-menu > .browse-categories---------------*/
     .main-menu .browse-categories {
         width: 100%;
     }
@@ -190,14 +190,45 @@ html, body {
                 background-color: var(--color-theme);
                 color: var(--color-white);
             }
-/*-----------------.main-menu > .special-offer------------------------*/
+/*-----------------.main-menu > .special-offer------------------*/
         .main-menu .special-offer{
             display: none;
         }
 
+/*--------------------------------SHOWCASE-------------------------------*/
+.showcase{
+    background-color: var(--color-grey-3);
+}
+.showcase .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*------------------.showcase > .showcase-left------------------*/
+    .showcase .showcase-left h1{
+        font-size: var(--font-size-60);
+        font-family: var(--font-play);
+    }
+    .showcase .showcase-left p{
+        width: 80%;
+        margin: 2rem 0;
+    }
+    .showcase .showcase-left span{
+        color: var(--color-theme);
+        font-weight: var(--font-weight-bold);
+    }
+    .showcase .showcase-left .btn {
+        background-color: var(--color-white);
+        color: var(--color-theme);
+    }
+        .showcase .showcase-left .btn:hover {
+            background-color: var(--color-theme-dark);
+            color: var(--color-white);
+        }
+
 /*----------------------------RESPONSIVE---------------------------------*/
 
-/* -----------576px------------ */
+/* --------------------------576px----------------------------- */
 @media (min-width: 576px) { 
     /* top-menu */
     .top-menu .menu-links {
@@ -235,7 +266,7 @@ html, body {
         }
 }
 
-/* -----------768px------------ */
+/* --------------------------768px----------------------------- */
 @media (min-width: 768px) {
     /* main-menu */
     .main-menu .brand{
@@ -259,7 +290,7 @@ html, body {
         }
 }
 
-/* -----------992px------------ */
+/* ----------------------------992px--------------------------- */
 @media (min-width: 992px) {
     /* top-menu */
     .top-menu .top-menu-right{
@@ -313,7 +344,7 @@ html, body {
 }
 
 
-/* -----------1200px------------ */
+/* ---------------------------1200px--------------------------- */
 @media (min-width: 1200px) {
     /* main-menu */
     .main-menu .brand{
@@ -327,7 +358,7 @@ html, body {
     }
 }
 
-/* -----------1400px------------ */
+/* ---------------------------1400px--------------------------- */
 @media (min-width: 1400px) {
     /* main-menu */
     .main-menu .brand{
