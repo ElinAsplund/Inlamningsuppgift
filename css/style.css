@@ -226,6 +226,43 @@ html, body {
             color: var(--color-white);
         }
 
+/*-----------------------------WEBSHOP-INFO------------------------------*/
+.webshop-info{
+    padding: 4rem 0;
+}
+    .webshop-info .container{
+        max-width: 1600px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .webshop-info .info-box{
+        margin: 0 1rem;
+        padding: 1.5rem;
+        flex: 1;
+        background-color: var(--color-theme-light);
+        border-radius: var(--border-radius-small);
+        display: flex;
+        align-items: center;
+    }
+        .webshop-info .info-box:hover{
+            background-color: var(--color-theme);
+            color: var(--color-white);
+        }
+    .webshop-info .info-box img{
+        margin-right: 1.5rem;
+    }
+        .webshop-info .info-box:hover img{
+            filter: brightness(1000%);
+        }
+    .webshop-info .info-box h1{
+        color: var(--color-theme);
+        font-size: 1rem;
+        font-weight: var(--font-weight-medium);
+    }
+        .webshop-info .info-box:hover h1{
+            color: var(--color-white);
+            }
+
 /*----------------------------RESPONSIVE---------------------------------*/
 
 /* --------------------------576px----------------------------- */
