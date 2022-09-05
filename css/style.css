@@ -129,7 +129,7 @@ html, body {
                 color: var(--color-theme);
             }
                 .main-menu .menu-links .menu-link:first-child{
-                    margin-right: -0.15rem;
+                    margin-right: -0.35rem;
                 }
                 .main-menu .menu-links .menu-link:last-child{
                     margin-right: 0;
@@ -201,7 +201,7 @@ html, body {
 }
 .showcase .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .showcase img{
@@ -211,10 +211,19 @@ html, body {
     .showcase .showcase-left{
         text-align: center;
         padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .showcase .showcase-left .showcase-heading{
+        flex-direction: column;
+        align-items: center;
     }
     .showcase .showcase-left h1{
         font-size: var(--font-size-36);
         font-family: var(--font-play);
+        justify-content: center;
     }
     .showcase .showcase-left p{
         display: none;
@@ -226,7 +235,8 @@ html, body {
     .showcase .showcase-left .btn {
         background-color: var(--color-white);
         color: var(--color-theme);
-
+        margin: 1rem 0;
+        width: 100%;
     }
         .showcase .showcase-left .btn:hover {
             background-color: var(--color-theme-dark);
@@ -310,8 +320,13 @@ html, body {
         }
 
     /* showcase */
+    .showcase .showcase-left .btn{
+        width: auto;
+    }
     .showcase .showcase-left p{
         display: block;
+        margin-top: 0.5rem;
+        width: 60%;
     }
 }
 
@@ -325,6 +340,8 @@ html, body {
         display: block;
         flex: 3.5;
         border: 1px var(--color-theme-dark) solid;
+        border-radius: var(--border-radius-medium);
+        text-align: center;
     }
     .main-menu .menu-links{
         flex: 3;
@@ -363,25 +380,31 @@ html, body {
 
     /* main-menu */
     .main-menu .menu-links .menu-link{
-        margin: 0 0.8rem;
-    }
+        margin: 0 0.3rem;
+    } 
         .main-menu .menu-links .menu-link:first-child{
-            margin-right: 1rem;
+            margin-right: 2rem;
         }
-            .main-menu .menu-links span{
-                display: inline-block;
-            }
-
-        .main-menu .brand{
-            flex: 3;
+        .main-menu .menu-links .menu-link span{
+            display: block;
         }
-        .main-menu .search{
-            flex: 3;
-            border: 1px var(--color-theme-dark) solid;
+        .main-menu .menu-links .menu-link .span-first{
+            margin-top: 2px;
         }
-        .main-menu .menu-links{
-            flex: 4;
+        .main-menu .menu-links .menu-link .span-second{
+            margin-top: 3px;
+            margin-left: 0.4rem;
         }
+    .main-menu .brand{
+        flex: 3;
+    }
+    .main-menu .search{
+        flex: 3;
+        border: 1px var(--color-theme-dark) solid;
+    }
+    .main-menu .menu-links{
+        flex: 4;
+    }
     
     /* main-menu nav */
         .main-menu .browse-categories {
@@ -392,9 +415,13 @@ html, body {
         }
 
     /* showcase */
+    .showcase .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .showcase img{
         display: block;
-        border: 1px black solid;
         flex: 1;
     }
     .image-container img {
@@ -402,15 +429,22 @@ html, body {
     }
     .showcase .showcase-left{
         text-align: left;
+        align-items: start;
         flex: 1;
     }
+
         .showcase .showcase-left h1{
             font-size: var(--font-size-60);
         }
         .showcase .showcase-left p{
             width: 80%;
             margin: 2rem 0;
+            text-align: left;
+            margin-top: 0;
         }
+    .showcase .showcase-left .btn{
+        margin: 0;
+    }
 }
 
 
