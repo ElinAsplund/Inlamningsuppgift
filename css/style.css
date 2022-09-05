@@ -204,6 +204,9 @@ html, body {
     justify-content: space-between;
     align-items: center;
 }
+.showcase img{
+    display: none;
+}
 /*------------------.showcase > .showcase-left------------------*/
     .showcase .showcase-left h1{
         font-size: var(--font-size-60);
@@ -324,6 +327,11 @@ html, body {
         }
         .main-menu .special-offer {
             flex: 6.5;
+        }
+
+    /* showcase */
+        .showcase img{
+            display: block;
         }
 }
 
