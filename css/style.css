@@ -11,6 +11,9 @@ html body {
     font-weight: var(--font-weight-regular);
     color: var(--color-theme-dark);
 }
+.bg-theme{
+    background-color: var(--color-theme);
+}
 
 /* button */
 .btn-theme {
@@ -30,7 +33,7 @@ html body {
 .section-title{
     color: var(--color-theme-dark);
     text-align: center;
-    padding: 3rem 0;
+    padding: 1.5rem 0;
 }
     .section-title h1{
         font-family: var(--font-play);
@@ -157,6 +160,18 @@ html body {
             .main-menu .menu-links .menu-link i{
                 font-size: 1.2rem;
             }
+            .main-menu .menu-links #cart{
+                position: relative;
+            }
+                .main-menu .menu-links #cart .badge{
+                    background-color: var(--color-theme);
+                    position: absolute;
+                    top: -0.8rem;
+                    left: 0.4rem;
+                }
+                    .main-menu .menu-links #cart:hover .badge{
+                        background-color: var(--color-theme-dark);
+                    }
 
 /*------------------.main-menu > nav--------------------------- */
     .main-menu nav {
@@ -312,6 +327,7 @@ html body {
         background-color: var(--color-grey-1);
         border-radius: var(--border-radius-small);
         overflow: hidden;
+        position: relative;
     }
         .shop-by-category .grid .category-box .category-box-title{
             background-color: var(--color-theme-dark);
@@ -320,7 +336,21 @@ html body {
             font-weight: var(--font-weight-medium);
             width: 50%;
             border-radius: 0 var(--border-radius-small) 0 0;
+            position: absolute;
+            bottom: 0;
+            height: 38px;
         }
+            .shop-by-category .grid .category-box:hover .category-box-title{
+                height: 65px;
+            }
+            .shop-by-category .grid .category-box .category-box-title span{
+                display: block;
+                color: var(--color-white);
+                font-size: 0.8rem;
+                margin-top: 0.2rem;
+            }
+
+    /* category-box-n */
     #category-box-1{
         grid-column: 1/2;
         grid-row: 1/2;
@@ -491,7 +521,7 @@ html body {
         }
         .main-menu .menu-links .menu-link .span-second{
             margin-top: 3px;
-            margin-left: 0.4rem;
+            margin-left: 1rem;
         }
     .main-menu .brand{
         flex: 3;
