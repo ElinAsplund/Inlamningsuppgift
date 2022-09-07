@@ -4,7 +4,7 @@
 
 /*----------------------------STANDARD VALUES----------------------------*/
 /* body */
-html body {
+html, body {
     font-size: 16px;
     line-height: 1.5;
     font-family: var(--font-roboto);
@@ -288,6 +288,7 @@ html body {
 /*---------------------.web-shop > .info-box--------------------*/
     .webshop-info .info-box{
         margin: 0.5rem;
+        margin-top: 1rem;
         padding: 0.5rem;
         background-color: var(--color-theme-light);
         border-radius: var(--border-radius-small);
@@ -303,7 +304,6 @@ html body {
             }
         .webshop-info .info-box img{
             width: 2.5rem;
-            margin-bottom: 0.5rem;
         }
             .webshop-info .info-box:hover img{
                 filter: brightness(1000%);
@@ -316,6 +316,10 @@ html body {
     }
 
 /*--------------------------SHOP-BY-CATEGORY-----------------------------*/
+.shop-by-category .section-title p{
+    display: none;
+}
+
 /*-----------------.shop-by-category > .grid--------------------*/
 .shop-by-category .grid {
     display: grid;
@@ -441,6 +445,7 @@ html body {
             color: var(--color-theme);
             font-size: 1rem;
             font-weight: var(--font-weight-medium);
+            margin: 0;
         }
             .webshop-info .info-box:hover h1{
                 color: var(--color-white);
@@ -449,6 +454,10 @@ html body {
             width: auto;
             margin-bottom: 0.5rem;
         }
+    /* shop-by-category */
+    .shop-by-category .section-title p{
+        display: block;
+    }
 }
 
 /* --------------------------768px----------------------------- */
@@ -588,6 +597,7 @@ html body {
         }
             .webshop-info .info-box img{
                 margin-right: 1.5rem;
+                margin-bottom: 0;
             }  
 }
 
@@ -616,7 +626,12 @@ html body {
     }
         .webshop-info .info-box p{
             display: block;
+            margin: 0;
         }
+
+        .webshop-info .info-box h1{
+            margin-bottom: 0.5rem;
+        } 
 }
 
 /* ---------------------------1400px--------------------------- */
