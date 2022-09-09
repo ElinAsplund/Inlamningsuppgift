@@ -400,6 +400,23 @@ html, body {
 .new-arrivals .section-title p{
     display: none;
 }
+    .new-arrivals .card-holder{
+        display: flex;
+        justify-content: space-between;
+    }
+    .new-arrivals .col{
+        padding: 0;
+        height: 350px;
+        width: 300px;
+    }
+
+/*-----------------.new-arrivals > .card------------------------*/
+.new-arrivals .card{
+    height: 400px;
+}
+    .new-arrivals .card .card-body{
+        position: absolute;
+    }
 
 /*------------------MEDIA QUERIES: RESPONSIVE DESIGN---------------------*/
 /* --------------------------576px----------------------------- */
@@ -490,6 +507,7 @@ html, body {
     .new-arrivals .section-title p{
         display: block;
     }
+
 }
 
 /* --------------------------768px----------------------------- */
