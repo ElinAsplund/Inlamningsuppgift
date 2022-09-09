@@ -323,7 +323,7 @@ html, body {
 .shop-by-category .section-title p{
     display: none;
 }
-.shop-by-category .center-grid{
+.shop-by-category .centering-grid{
     display: flex;
     justify-content: center;
 }
@@ -386,6 +386,11 @@ html, body {
     #category-box-7{
         display: none;
     }
+
+/*----------------------------NEW-ARRIVALS-------------------------------*/
+.new-arrivals .section-title p{
+    display: none;
+}
 
 /*----------------------------RESPONSIVE---------------------------------*/
 /* --------------------------576px----------------------------- */
@@ -466,6 +471,14 @@ html, body {
         
     /* shop-by-category */
     .shop-by-category .section-title p{
+        display: block;
+    }
+        .shop-by-category .grid{
+            margin-bottom: 1rem;
+        }
+    
+    /* new-arrivals */
+    .new-arrivals .section-title p{
         display: block;
     }
 }
@@ -657,6 +670,7 @@ html, body {
     .shop-by-category .grid {
         grid-template-columns: repeat(5, minmax(100px, 180px));
         grid-template-rows: repeat(3, minmax(100px, 180px));
+        margin-bottom: 2rem;
     }
         .shop-by-category .grid .category-box .category-box-title{
             border-radius: 0 var(--border-radius-small) 0 0;
@@ -700,6 +714,7 @@ html, body {
     .shop-by-category .grid {
         grid-template-columns: repeat(5, minmax(200px, 215px));
         grid-template-rows: repeat(3, minmax(200px, 215px));
+        margin-bottom: 4rem;
     }
         .shop-by-category .grid .category-box .category-box-title{
             width: 50%;
