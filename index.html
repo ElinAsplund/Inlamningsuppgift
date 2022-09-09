@@ -11,9 +11,9 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-    <header class="d-block">
+    <header class="d-none">
 <!--TOP-MENU -------------------------------------------------------------------------------->
-        <div class="top-menu">
+        <div class="top-menu d-none">
             <div class="container">
                 <!-- site-settings -->
                     <div class="site-settings">
@@ -61,7 +61,7 @@
             </div>
         </div>
 <!--MAIN-MENU-------------------------------------------------------------------------------->
-        <div class="main-menu">
+        <div class="main-menu d-none">
             <div class="container">
                 <!-- brand -->
                 <div class="brand">
@@ -108,7 +108,7 @@
         </div>
     </header>
 <!--SHOWCASE--------------------------------------------------------------------------------->
-    <section class="showcase">
+    <section class="showcase d-none">
         <div class="container">
             <div class="showcase-left">
                 <div class="showcase-heading">
@@ -124,7 +124,7 @@
         </div>
     </section>
 <!--WEBSHOP-INFO----------------------------------------------------------------------------->
-    <section class="webshop-info">
+    <section class="webshop-info d-none">
         <div class="container">
                 <div class="info-box">
                     <img src="/img/icons/shipping-icon.svg" alt="a box ready to be shipped">
@@ -157,7 +157,7 @@
         </div>
     </section>
 <!--SHOP-BY-CATEGORY------------------------------------------------------------------------->
-    <section class="shop-by-category">
+    <section class="shop-by-category d-none">
         <div class="container">
             <!-- section-title -->
             <div class="section-title">
@@ -216,7 +216,41 @@
                 <img src="/img/wave-line.svg" alt="decorative wavy line">
                 <p>Check out our latest products from top fashion designers</p>
             </div>
-            
+            <!-- card-section -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                
+                <!-- card 1 -->
+                <div class="col">
+                  <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="col d-none">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="col d-none">
+                    <div class="card">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
     <div style="height: 750px;"></div>
