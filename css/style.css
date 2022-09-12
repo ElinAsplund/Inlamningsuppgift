@@ -11,6 +11,10 @@ html, body {
     font-weight: var(--font-weight-regular);
     color: var(--color-theme-dark);
 }
+/* .container{
+    padding-right: 0;
+    padding-left: 0;
+} */
 .bg-theme{
     background-color: var(--color-theme);
 }
@@ -67,12 +71,12 @@ html, body {
         align-items: center;
         height: 3.3rem;
     }
-        .top-menu a {
+        .top-menu a{
             color: var(--color-white);
             text-decoration: none;
-            margin: 0 1.2rem;
+            margin: 0 1.2rem; 
         }
-            .top-menu a:hover {
+            .top-menu a:hover{
                 color: var(--color-theme-dark);
             }
     
@@ -91,6 +95,7 @@ html, body {
         .top-menu .site-settings .dropdown-menu .dropdown-item{
             width: 10em;
             margin: 0;
+            transition: 0.2s ease-in-out;
         }
             .top-menu .site-settings .dropdown-menu .dropdown-item:hover{
                 background-color: var(--color-theme);
@@ -110,12 +115,12 @@ html, body {
 /*------------------.top-menu > .top-menu-right---------------- */
     .top-menu .top-menu-right .menu-links {
         display: none;
-        transition: 0.2s ease-in-out;
-
     }
+        .top-menu .top-menu-right .menu-links a {
+            transition: 0.2s ease-in-out;
+        }
     .top-menu .top-menu-right .social-media {
         display: none;
-        transition: 0.2s ease-in-out;
     }
 
 /*-------------------------------MAIN-MENY-------------------------------*/
@@ -165,9 +170,11 @@ html, body {
             }
                 .main-menu .menu-links .menu-link:first-child{
                     margin-right: -0.35rem;
+                    transition: 0.2s ease-in-out;
                 }
                 .main-menu .menu-links .menu-link:last-child{
                     margin-right: 0;
+                    transition: 0.1s ease-in-out;
                 }
             .main-menu .menu-links .menu-link i{
                 font-size: 1.2rem;
@@ -234,6 +241,7 @@ html, body {
             .main-menu .browse-categories .dropdown-menu .dropdown-item {
                 background-color: var(--color-theme-dark);
                 color: var(--color-white);
+                transition: 0.2s ease-in-out;
             }
             .main-menu .browse-categories .dropdown-menu .dropdown-item:hover {
                 background-color: var(--color-theme);
@@ -412,17 +420,19 @@ html, body {
     .new-arrivals .card-holder{
         display: flex;
         justify-content: space-between;
+        margin-bottom: 8rem;
     }
     .new-arrivals .col{
-        padding: 0;
-        height:350px;
-        width: 300px;
+        height: 350px;
+        width: 325px;
     }
 
 /*-----------------.new-arrivals > .card------------------------*/
 .new-arrivals .card{
     position: relative;
     overflow: hidden;
+    border: none;
+    background-color: var(--color-grey-3);
 }
     .new-arrivals .card .card-body{
         position: absolute;
@@ -431,7 +441,7 @@ html, body {
         height: 15%;
         width: 100%;
         z-index: 1;
-        transition: 0.2s ease-in-out;
+        transition: 0.3s ease-in-out;
         font-size: 1rem;
         padding: 1rem;
         pointer-events: none;
@@ -443,7 +453,7 @@ html, body {
             font-size: 1.1rem;
             margin-bottom: 1rem;
             font-weight: var(--font-weight-regular);
-            transition: 0.2s ease-in-out;
+            transition: 0.3s ease-in-out;
         }
             .new-arrivals .card:hover .card-body h1{
                 margin-bottom: 0rem;
@@ -476,9 +486,6 @@ html, body {
         .new-arrivals .card .centering-icons .fa-cart-shopping{
             font-size: 0.9em;
         }
-            .new-arrivals .card .centering-icons .fa-cart-shopping:hover{
-                color: var(--color-theme);
-            }
     .new-arrivals .card .card-menu{
         position: absolute;
         z-index: 1;
@@ -493,7 +500,7 @@ html, body {
         transition: top 0.3s ease-in-out;
     }
         .new-arrivals .card:hover .card-menu{
-            top: 1rem;
+            top: 0.8rem;
         }
         .new-arrivals .card .card-menu li{
             margin: 0.3rem 0;
@@ -511,7 +518,7 @@ html, body {
         width: 100%;
         background-color: var(--color-theme-dark);
         opacity: 0.9;
-        transition: height 0.2s ease-in-out;
+        transition: height 0.3s ease-in-out;
     }
         .new-arrivals .card:hover .card-background{
             height: 100%;
@@ -547,6 +554,9 @@ html, body {
     }
 
     /* main-menu nav */
+        .main-menu nav .container{
+            padding: 0 12px;
+        }
         .main-menu nav .browse-categories {
             flex: 1;
         }
@@ -713,6 +723,9 @@ html, body {
     } 
         .main-menu .menu-links .menu-link:first-child{
             margin-right: 2rem;
+        }
+        .main-menu .menu-links .menu-link:last-child{
+            margin-left: 0.5rem;
         }
         .main-menu .menu-links .menu-link span{
             display: block;
