@@ -41,6 +41,11 @@ html, body {
       background-color: var(--color-theme-dark);
       color: var(--color-white);  
     }
+    /* I wanted to remove the borders after you clicked the button, it's not working:
+    .btn-theme input:focus {
+        border: 0;
+        outline: 0;
+    } */
 
 /* section-title */
 .section-title{
