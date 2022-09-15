@@ -653,6 +653,9 @@ html, body {
         }
 
 /*-----------------------------TOP-SELLERS-------------------------------*/
+.top-sellers .container{
+    margin-bottom: 5.5rem;
+}
 .top-sellers .grid {
     display: grid;
     gap: 1.5rem;
@@ -688,13 +691,59 @@ html, body {
 #top-sellers-card-1 img{
     height: 700px;
 }
-
 #top-sellers-card-1 .card-background{
     height: 8%;
     transition: 0.3s ease-in-out;
 }
     #top-sellers-card-1:hover .card-background{
         height: 100%;
+    }
+
+/*-------------------------------FOOTER----------------------------------*/
+/*---------------footer > .footer-subscribe---------------------*/
+footer .footer-subscribe{
+    background-color: var(--color-grey-4);
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+    footer .footer-subscribe .subscribe-now h1{
+        font-family: var(--font-play);
+        font-weight: var(--font-weight-bold);
+        font-size: var(--font-size-36);
+    }
+        footer .footer-subscribe .subscribe-now h1 span{
+            color: var(--color-theme);
+        }
+    footer .footer-subscribe .subscribe-now p{
+        width: 70%;
+        margin-bottom: 1.5rem;
+    }
+    footer .footer-subscribe .subscribe-now .subscribe-email{
+        width: 80%;
+        padding: 0.5rem;
+        text-align: center;
+        background-color: var(--color-white);
+        color: var(--color-grey-0);
+        border-radius: var(--border-radius-medium);
+    }
+    footer .footer-subscribe .blank-placeholder{
+        background-color: var(--color-grey-1);
+        width: 45%;
+        height: 100%;
+    }
+/*---------------footer > .footer-copyright---------------------*/
+footer .footer-copyright{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 1rem 0;
+}
+    footer .footer-copyright p{
+        margin: 0;
     }
 
 /*------------------MEDIA QUERIES: RESPONSIVE DESIGN---------------------*/
@@ -824,9 +873,11 @@ html, body {
     .main-menu .search{
         display: block;
         flex: 3.5;
-        border: 1px var(--color-theme-dark) solid;
+        border: 1px var(--color-grey-0) solid;
         border-radius: var(--border-radius-medium);
         text-align: center;
+        padding: 0.5rem;
+        color: var(--color-grey-0);
     }
     .main-menu .menu-links{
         flex: 3;
@@ -1016,7 +1067,6 @@ html, body {
     }
     .main-menu .search{
         flex: 3;
-        border: 1px var(--color-theme-dark) solid;
     }
     .main-menu .menu-links{
         flex: 4;
