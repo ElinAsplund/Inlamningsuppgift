@@ -56,6 +56,100 @@ html, body {
     .section-title p{
         margin: 1rem 0;
     }
+
+/* cards */
+.card-holder{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4.75rem;
+}
+.col{
+    height: 270px;
+    width: 255px;
+    margin-top: 0.75rem;    
+    margin-bottom: 0.75rem;
+}
+
+.card{
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background-color: var(--color-grey-3);
+}
+    .card .card-body{
+        position: absolute;
+        bottom: 0;
+        color: var(--color-white);
+        height: 17%;
+        width: 100%;
+        z-index: 1;
+        transition: 0.3s ease-in-out;
+        font-size: 1rem;
+        padding: 1rem;
+        pointer-events: none;
+    }
+        .card .card-body h1{
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            font-weight: var(--font-weight-regular);
+            transition: 0.3s ease-in-out;
+        }
+        .card .card-body button{
+            background-color: transparent;
+            color: var(--color-white);
+            border: solid var(--color-white) 1px;
+            padding: 0 0.7rem;
+            font-size: 0.875rem;
+            margin-top: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+        .card .card-body .card-old-price{
+            text-decoration: line-through;
+            margin: 0;
+        }
+        .card .card-body .card-discount-price{
+            color: var(--color-theme);
+            font-weight: var(--font-weight-medium);
+            font-size: 1.5em;
+            margin: 0;
+        }
+    .card .centering-icons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;       
+    }
+        .card .centering-icons .fa-cart-shopping{
+            font-size: 0.9em;
+        }
+    .card .card-menu{
+        position: absolute;
+        z-index: 1;
+        top: 300%;
+        right: 1rem;
+        list-style: none;
+        margin: auto;
+        padding: 0.7rem;
+        font-size: 1.25rem;
+        border-radius: var(--border-radius-medium);
+        background-color: var(--color-white);
+        transition: top 0.3s ease-in-out;
+    }
+        .card .card-menu li{
+            margin: 0.3rem 0;
+        }
+            .card .card-menu li a{
+                color: var(--color-grey-0);
+            }
+    .card .card-background{
+        position: absolute;
+        bottom: 0;
+        height: 15%;
+        width: 100%;
+        background-color: var(--color-theme-dark);
+        opacity: 0.9;
+        transition: height 0.3s ease-in-out;
+    }
+
         
 /*-------------------------------TOP-MENU------------------------------- */
 .top-menu {
@@ -417,98 +511,6 @@ html, body {
     .new-arrivals .section-title p{
         display: none;
     }
-.new-arrivals .card-holder{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 4.75rem;
-}
-.new-arrivals .col{
-    height: 270px;
-    width: 255px;
-    margin-top: 0.75rem;    
-    margin-bottom: 0.75rem;
-}
-
-/*-----------------.new-arrivals > .card------------------------*/
-.new-arrivals .card{
-    position: relative;
-    overflow: hidden;
-    border: none;
-    background-color: var(--color-grey-3);
-}
-    .new-arrivals .card .card-body{
-        position: absolute;
-        bottom: 0;
-        color: var(--color-white);
-        height: 17%;
-        width: 100%;
-        z-index: 1;
-        transition: 0.3s ease-in-out;
-        font-size: 1rem;
-        padding: 1rem;
-        pointer-events: none;
-    }
-        .new-arrivals .card .card-body h1{
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            font-weight: var(--font-weight-regular);
-            transition: 0.3s ease-in-out;
-        }
-        .new-arrivals .card .card-body button{
-            background-color: transparent;
-            color: var(--color-white);
-            border: solid var(--color-white) 1px;
-            padding: 0 0.7rem;
-            font-size: 0.875rem;
-            margin-top: 0.8rem;
-            margin-bottom: 0.8rem;
-        }
-        .new-arrivals .card .card-body .card-old-price{
-            text-decoration: line-through;
-            margin: 0;
-        }
-        .new-arrivals .card .card-body .card-discount-price{
-            color: var(--color-theme);
-            font-weight: var(--font-weight-medium);
-            font-size: 1.5em;
-            margin: 0;
-        }
-    .new-arrivals .card .centering-icons{
-        display: flex;
-        flex-direction: column;
-        align-items: center;       
-    }
-        .new-arrivals .card .centering-icons .fa-cart-shopping{
-            font-size: 0.9em;
-        }
-    .new-arrivals .card .card-menu{
-        position: absolute;
-        z-index: 1;
-        top: 300%;
-        right: 1rem;
-        list-style: none;
-        margin: auto;
-        padding: 0.7rem;
-        font-size: 1.25rem;
-        border-radius: var(--border-radius-medium);
-        background-color: var(--color-white);
-        transition: top 0.3s ease-in-out;
-    }
-        .new-arrivals .card .card-menu li{
-            margin: 0.3rem 0;
-        }
-            .new-arrivals .card .card-menu li a{
-                color: var(--color-grey-0);
-            }
-    .new-arrivals .card .card-background{
-        position: absolute;
-        bottom: 0;
-        height: 15%;
-        width: 100%;
-        background-color: var(--color-theme-dark);
-        opacity: 0.9;
-        transition: height 0.3s ease-in-out;
-    }
 
 /*----------------------------NEW-CUSTOMER-------------------------------*/
 .new-customer{
@@ -577,97 +579,9 @@ html, body {
         display: none;
     }
 .featured-products .card-holder{
-    display: flex;
-    justify-content: center;
     margin-bottom: 10rem;
 }
-.featured-products .col{
-    height: 270px;
-    width: 255px;
-    margin-top: 0.75rem;    
-    margin-bottom: 0.75rem;
-}
 
-/*-----------------.featured-products > .card------------------------*/
-.featured-products .card{
-    position: relative;
-    overflow: hidden;
-    border: none;
-    background-color: var(--color-grey-3);
-}
-    .featured-products .card .card-body{
-        position: absolute;
-        bottom: 0;
-        color: var(--color-white);
-        height: 17%;
-        width: 100%;
-        z-index: 1;
-        transition: 0.3s ease-in-out;
-        font-size: 1rem;
-        padding: 1rem;
-        pointer-events: none;
-    }
-        .featured-products .card .card-body h1{
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            font-weight: var(--font-weight-regular);
-            transition: 0.3s ease-in-out;
-        }
-        .featured-products .card .card-body button{
-            background-color: transparent;
-            color: var(--color-white);
-            border: solid var(--color-white) 1px;
-            padding: 0 0.7rem;
-            font-size: 0.875rem;
-            margin-top: 0.8rem;
-            margin-bottom: 0.8rem;
-        }
-        .featured-products .card .card-body .card-old-price{
-            text-decoration: line-through;
-            margin: 0;
-        }
-        .featured-products .card .card-body .card-discount-price{
-            color: var(--color-theme);
-            font-weight: var(--font-weight-medium);
-            font-size: 1.5em;
-            margin: 0;
-        }
-    .featured-products .card .centering-icons{
-        display: flex;
-        flex-direction: column;
-        align-items: center;       
-    }
-        .featured-products .card .centering-icons .fa-cart-shopping{
-            font-size: 0.9em;
-        }
-    .featured-products .card .card-menu{
-        position: absolute;
-        z-index: 1;
-        top: 300%;
-        right: 1rem;
-        list-style: none;
-        margin: auto;
-        padding: 0.7rem;
-        font-size: 1.25rem;
-        border-radius: var(--border-radius-medium);
-        background-color: var(--color-white);
-        transition: top 0.3s ease-in-out;
-    }
-        .featured-products .card .card-menu li{
-            margin: 0.3rem 0;
-        }
-            .featured-products .card .card-menu li a{
-                color: var(--color-grey-0);
-            }
-    .featured-products .card .card-background{
-        position: absolute;
-        bottom: 0;
-        height: 15%;
-        width: 100%;
-        background-color: var(--color-theme-dark);
-        opacity: 0.9;
-        transition: height 0.3s ease-in-out;
-    }
 
 /*-----------------------------FLASH-SALE--------------------------------*/
 .flash-sale{
@@ -849,6 +763,11 @@ html, body {
     .featured-products .section-title p{
         display: block;
     }
+
+    /* top-sellers */
+    .top-sellers .section-title p{
+        display: block;
+    }
 }
 
 /* --------------------------768px----------------------------- */
@@ -978,6 +897,31 @@ html, body {
             height: 100%;
         }
 
+    /* top-sellers */
+    .top-sellers .col{
+        height: 350px;
+        width: 325px;
+    }
+        .top-sellers .card .card-body{
+            height: 15%;
+        }
+
+        /* top-sellers: activating hovering-effects */
+        .top-sellers .card:hover .card-body{
+            height: 45%;
+        }
+        .top-sellers .card:hover .card-body h1{
+            margin-bottom: 0rem;
+        }
+        .top-sellers .card:hover .card-menu{
+            top: 0.8rem;
+        }
+        .top-sellers .card .card-menu li a:hover{
+            color: var(--color-theme);
+        }
+        .top-sellers .card:hover .card-background{
+            height: 100%;
+        }        
 }
 
 /* ----------------------------992px--------------------------- */
@@ -1183,6 +1127,11 @@ html, body {
     .featured-products .col:last-child{
         display: none;
     }
+
+    /* top-sellers */
+    .top-sellers .col:last-child{
+        display: none;
+    }
 }
 
 /* ---------------------------1400px--------------------------- */
@@ -1217,6 +1166,14 @@ html, body {
         justify-content: space-between;
     }
     .featured-products .col:last-child{
+        display: block;
+    }
+
+    /* top-sellers */
+    .top-sellers .card-holder{
+        justify-content: space-between;
+    }
+    .top-sellers .col:last-child{
         display: block;
     }
 }
