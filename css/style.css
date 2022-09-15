@@ -674,6 +674,77 @@ html, body {
         transition: height 0.3s ease-in-out;
     }
 
+/*-----------------------------FLASH-SALE--------------------------------*/
+.flash-sale{
+    background-color: var(--color-theme-lighter-dark);
+}
+.flash-sale .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30rem;
+    margin-bottom: 4rem;
+}
+    .flash-sale .container .flash-sale-banner{
+        background-color: var(--color-theme);
+        color: var(--color-white);
+        text-align: center;
+        padding: 2.5rem 2rem;
+    }
+            .flash-sale .container .flash-sale-banner h1{
+                font-family: var(--font-play);
+                font-weight: var(--font-weight-bold);
+                font-size: var(--font-size-60);
+            }
+            .flash-sale .container .flash-sale-banner p{
+                font-size: 1.5rem;
+                font-weight: var(--font-weight-medium);
+                margin: 0;
+            }
+        .flash-sale .container button{
+        background-color: var(--color-white);
+        color: var(--color-theme);
+        margin-top: 1rem;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+        transition: 0.2s ease-in-out;
+    }
+        .flash-sale .container button:hover{
+            background-color: var(--color-theme);
+            color: var(--color-white);
+        }
+    .flash-sale .circle-holder{
+        display: flex;
+    }
+        .flash-sale .circle-holder .circle{
+            background-color: var(--color-white);
+            width: 7rem;
+            height: 7rem;
+            border-radius: var(--border-radius-rounded);
+            border: 3px dashed var(--color-theme);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem;
+        }
+            .flash-sale .circle-holder .circle:last-child{
+                margin-right: 0rem;
+            }
+        .flash-sale .circle-holder h1{
+            display: block;
+            font-family: var(--font-play);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-theme);
+            margin: 0;
+            padding: 0;
+        }
+        .flash-sale .circle-holder p{
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
 /*------------------MEDIA QUERIES: RESPONSIVE DESIGN---------------------*/
 /* --------------------------576px----------------------------- */
 @media (min-width: 576px) { 
