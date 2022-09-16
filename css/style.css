@@ -674,6 +674,9 @@ html, body {
 .top-sellers .container{
     margin-bottom: 5.5rem;
 }
+    .container .section-title p{
+        display: none;
+    }
 .top-sellers .grid {
     display: grid;
     gap: 1.5rem;
@@ -735,20 +738,27 @@ footer .footer-subscribe{
 }
 footer .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;    
 }
+    footer .footer-subscribe .subscribe-now{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     footer .footer-subscribe .subscribe-now h1{
         font-family: var(--font-play);
         font-weight: var(--font-weight-bold);
         font-size: var(--font-size-36);
+        text-align: center;
     }
         footer .footer-subscribe .subscribe-now h1 span{
             color: var(--color-theme);
         }
     footer .footer-subscribe .subscribe-now p{
-        width: 70%;
         margin-bottom: 1.5rem;
+        text-align: center;
     }
     footer .footer-subscribe .subscribe-now .subscribe-email{
         width: 80%;
@@ -759,17 +769,24 @@ footer .container{
         border-radius: var(--border-radius-medium);
     }
     footer .footer-subscribe .blank-placeholder{
+        display: none;
         background-color: var(--color-grey-1);
         width: 45%;
         height: 100%;
     }
 /*---------------footer > .footer-copyright---------------------*/
-footer .footer-copyright{
+footer .footer-copyright{    
+    background-color: var(--color-dark);
+}
+
+footer .footer-copyright .container{
     display: flex;
     align-items: center;
+    justify-content: start;
     background-color: var(--color-dark);
     color: var(--color-white);
-    padding: 1rem 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
     footer .footer-copyright p{
         margin: 0;
@@ -855,18 +872,13 @@ footer .footer-copyright{
             margin-bottom: 0.5rem;
         }
         
-    /* shop-by-category */
-    .shop-by-category .section-title p{
+    /* show .section-title's p */
+    .container .section-title p{
         display: block;
     }
         .shop-by-category .grid{
             margin-bottom: 1rem;
         }
-    
-    /* new-arrivals */
-    .new-arrivals .section-title p{
-        display: block;
-    }
 
     /* new-customer */
     .new-customer{
@@ -1219,7 +1231,22 @@ footer .footer-copyright{
         }
         .new-customer .learn-more button{
             display: block;
-        }   
+        }
+
+    /* footer */
+    footer .container{
+        justify-content: space-between;  
+    }
+    footer .footer-subscribe .subscribe-now{
+        align-items: start;
+    }
+        footer .footer-subscribe .subscribe-now p{
+            width: 70%;
+            text-align: left;
+        }
+        footer .footer-subscribe .blank-placeholder{
+            display: block;
+        }
 }
 
 
