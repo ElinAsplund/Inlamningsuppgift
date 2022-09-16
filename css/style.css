@@ -717,11 +717,11 @@ div[id^="top-sellers-card-"]{
     transition: 0.4s ease-in-out;
 }
 #top-sellers-card-1 img{
-    padding-top: 2rem;
+    padding-top: 1.5rem;
 }
 #top-sellers-card-1 .card-background{
     height: 12%;
-    transition: 0.4s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 /*-------------------------------FOOTER----------------------------------*/
@@ -1091,26 +1091,17 @@ footer .footer-copyright .container{
         }
         div[id^="top-sellers-card-"] .card .card-body{
             padding: 2rem;
-            height: 2rem;
         }
     #top-sellers-card-1 img{
         padding-top: 2.5rem;
     }
     #top-sellers-card-1 .card-background{
-        height: 7.5%;
-        transition: 0.4s ease-in-out;
+        height: 9%;
     }
     div[id^="top-sellers-card-"] .card .card-background{
-        height: 15%;
+        height: 19%;
     }
 
-
-
-
-
-
-
-    
     /* top-sellers: activating hovering-effects */
     #top-sellers-card-1:hover .card-body{
         height: 11rem;
@@ -1124,9 +1115,14 @@ footer .footer-copyright .container{
     .top-sellers .card:hover .card-body h1{
         margin-bottom: 0rem;
     }
-    .top-sellers .card:hover .card-menu{
-        top: 2rem;
+    div[id^="top-sellers-card-"] .card:hover .card-menu{
+        display: none;
     }
+        #top-sellers-card-1 .card:hover .card-menu{
+            display: block;
+            top: 1.5rem;
+            transition: 0.4s ease-in-out;
+        }
     .top-sellers .card .card-menu li a:hover{
         color: var(--color-theme);
     }
@@ -1286,6 +1282,19 @@ footer .footer-copyright .container{
     div[id^="top-sellers-card-"]{
         width: 456px;
     }
+    #top-sellers-card-1 .card-background{
+        height: 7.5%;
+    }
+    div[id^="top-sellers-card-"] .card .card-background{
+        height: 15%;
+    }
+    div[id^="top-sellers-card-"] .card:hover .card-menu{
+        display: block;
+        top: 1rem;
+    }
+        #top-sellers-card-1 .card:hover .card-menu{
+            top: 2rem;
+        }
 
     /* footer */
     footer .container{
@@ -1388,6 +1397,18 @@ footer .footer-copyright .container{
     div[id^="top-sellers-card-"]{
         width: 546px;
     }
+    div[id^="top-sellers-card-"] .card .card-body{
+        height: 4.35rem;
+    }
+    div[id^="top-sellers-card-"] .card:hover .card-menu{
+        top: 2rem;
+    }
+        #top-sellers-card-1 .card .card-body{
+            height: 4.35rem;
+        }
+            #top-sellers-card-1 .card:hover .card-body{
+                height: 11rem;
+            }
 }
 
 /* ---------------------------1400px--------------------------- */
@@ -1426,10 +1447,23 @@ footer .footer-copyright .container{
     }
 
     /* top-sellers */
+    div[id^="top-sellers-card-"]{
+        width: 636px;
+    }
+    div[id^="top-sellers-card-"] .card .card-body{
+        height: 4.5rem;
+    }
+        #top-sellers-card-1 .card .card-body{
+            height: 4.5rem;
+        }
     .top-sellers .card-holder{
         justify-content: space-between;
     }
     .top-sellers .col:last-child{
         display: block;
     }
+    div[id^="top-sellers-card-"] .card:hover .card-menu{
+        top: 2rem;
+    }
+
 }
