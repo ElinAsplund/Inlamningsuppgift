@@ -680,8 +680,8 @@ html, body {
 .top-sellers .grid {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto);
 }
 .top-sellers .grid .col{
     height: 100%;
@@ -690,29 +690,28 @@ html, body {
 }
 
 #top-sellers-card-1{
-    grid-column: 1/2;
-    grid-row: 1/-1;
-    width: 636px;
-    flex: 1;
+    grid-column: 1/-1;
+    grid-row: 1/3;
 }
 #top-sellers-card-2{
-    grid-column: 2/-1;
-    grid-row: 1/2;
-    width: 636px;
-    flex: 1;
+    grid-column: 1/-1;
+    grid-row: 3/4;
 }
 #top-sellers-card-3{
-    grid-column: 2/-1;
-    grid-row: 2/-1;
-    width: 636px;
+    grid-column: 1/-1;
+    grid-row: 4/-1;
 }
-div[id^="top-sellers-card-"] .card .card-menu{
-    right: 2rem;
+div[id^="top-sellers-card-"]{
+    width: 231px;
+    flex: 1;
 }
 /* https://stackoverflow.com/questions/36772973/selecting-multiple-elements-with-same-classname-using-css */
-div[id^="top-sellers-card-"] .card .card-body{
-    padding: 2rem;
-}
+    div[id^="top-sellers-card-"] .card .card-menu{
+        right: 2rem;
+    }
+    div[id^="top-sellers-card-"] .card .card-body{
+        padding: 2rem;
+    }
 #top-sellers-card-1 .card-body{
     height: 4.5rem;
     transition: 0.3s ease-in-out;
@@ -923,10 +922,35 @@ footer .footer-copyright .container{
             .flash-sale .flash-sale-right button{
                 margin-top: 0;
             }
-
+    
     /* top-sellers */
-    .top-sellers .section-title p{
-        display: block;
+    div[id^="top-sellers-card-"]{
+        width: 246px;
+    }
+    
+    .top-sellers .grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+    .top-sellers .grid .col{
+        height: 100%;
+        width: 100%;
+        margin-top: 0rem;
+    }
+    
+    #top-sellers-card-1{
+        grid-column: 1/2;
+        grid-row: 1/-1;
+    }
+    #top-sellers-card-2{
+        grid-column: 2/-1;
+        grid-row: 1/2;
+    }
+    #top-sellers-card-3{
+        grid-column: 2/-1;
+        grid-row: 2/-1;
     }
 }
 
@@ -1060,9 +1084,8 @@ footer .footer-copyright .container{
         }
 
     /* top-sellers */
-    .top-sellers .col{
-        height: 350px;
-        width: 325px;
+    div[id^="top-sellers-card-"]{
+        width: 336px;
     }
         .top-sellers .card .card-body{
             height: 4.5rem;
@@ -1233,6 +1256,11 @@ footer .footer-copyright .container{
             display: block;
         }
 
+    /* top-sellers */
+    div[id^="top-sellers-card-"]{
+        width: 456px;
+    }
+
     /* footer */
     footer .container{
         justify-content: space-between;  
@@ -1331,8 +1359,8 @@ footer .footer-copyright .container{
     }
 
     /* top-sellers */
-    .top-sellers .col:last-child{
-        display: none;
+    div[id^="top-sellers-card-"]{
+        width: 546px;
     }
 }
 
