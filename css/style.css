@@ -89,7 +89,7 @@ html, body {
         pointer-events: none;
     }
         .card .card-body h1{
-            font-size: 1.1rem;
+            font-size: 0.9rem;
             margin-bottom: 1rem;
             font-weight: var(--font-weight-regular);
             transition: 0.3s ease-in-out;
@@ -582,7 +582,6 @@ html, body {
     margin-bottom: 10rem;
 }
 
-
 /*-----------------------------FLASH-SALE--------------------------------*/
 .flash-sale{
     background-color: var(--color-theme-lighter-dark);
@@ -706,29 +705,24 @@ div[id^="top-sellers-card-"]{
     flex: 1;
 }
 /* https://stackoverflow.com/questions/36772973/selecting-multiple-elements-with-same-classname-using-css */
-    div[id^="top-sellers-card-"] .card .card-menu{
-        right: 2rem;
-    }
     div[id^="top-sellers-card-"] .card .card-body{
-        padding: 2rem;
+        padding: 1rem;
+        height: 2.7rem;
+    }
+    div[id^="top-sellers-card-"] .card .card-background{
+        height: 24%;
     }
 #top-sellers-card-1 .card-body{
-    height: 4.5rem;
-    transition: 0.3s ease-in-out;
+    height: 2.7rem;
+    transition: 0.4s ease-in-out;
 }
-    #top-sellers-card-1:hover .card-body{
-        height: 11rem;
-    }
 #top-sellers-card-1 img{
     padding-top: 2rem;
 }
 #top-sellers-card-1 .card-background{
-    height: 7.5%;
+    height: 12%;
     transition: 0.4s ease-in-out;
 }
-    #top-sellers-card-1:hover .card-background{
-        height: 100%;
-    }
 
 /*-------------------------------FOOTER----------------------------------*/
 /*---------------footer > .footer-subscribe---------------------*/
@@ -956,6 +950,11 @@ footer .footer-copyright .container{
 
 /* --------------------------768px----------------------------- */
 @media (min-width: 768px) {
+    /* stadard values */
+    .card .card-body h1{
+        font-size: 1.1rem;
+    }
+
     /* main-menu */
     .main-menu .brand{
         flex: 3.5;
@@ -1087,26 +1086,53 @@ footer .footer-copyright .container{
     div[id^="top-sellers-card-"]{
         width: 336px;
     }
-        .top-sellers .card .card-body{
-            height: 4.5rem;
+        div[id^="top-sellers-card-"] .card .card-menu{
+            right: 2rem;
         }
+        div[id^="top-sellers-card-"] .card .card-body{
+            padding: 2rem;
+            height: 2rem;
+        }
+    #top-sellers-card-1 img{
+        padding-top: 2.5rem;
+    }
+    #top-sellers-card-1 .card-background{
+        height: 7.5%;
+        transition: 0.4s ease-in-out;
+    }
+    div[id^="top-sellers-card-"] .card .card-background{
+        height: 15%;
+    }
 
-        /* top-sellers: activating hovering-effects */
-        .top-sellers .card:hover .card-body{
-            height: 11rem;
-        }
-        .top-sellers .card:hover .card-body h1{
-            margin-bottom: 0rem;
-        }
-        .top-sellers .card:hover .card-menu{
-            top: 2rem;
-        }
-        .top-sellers .card .card-menu li a:hover{
-            color: var(--color-theme);
-        }
-        .top-sellers .card:hover .card-background{
-            height: 100%;
-        }        
+
+
+
+
+
+
+    
+    /* top-sellers: activating hovering-effects */
+    #top-sellers-card-1:hover .card-body{
+        height: 11rem;
+    }
+    #top-sellers-card-1:hover .card-background{
+        height: 100%;
+    }
+    .top-sellers .card:hover .card-body{
+        height: 11rem;
+    }
+    .top-sellers .card:hover .card-body h1{
+        margin-bottom: 0rem;
+    }
+    .top-sellers .card:hover .card-menu{
+        top: 2rem;
+    }
+    .top-sellers .card .card-menu li a:hover{
+        color: var(--color-theme);
+    }
+    .top-sellers .card:hover .card-background{
+        height: 100%;
+    }        
 }
 
 /* ----------------------------992px--------------------------- */
