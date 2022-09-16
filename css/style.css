@@ -589,27 +589,41 @@ html, body {
 }
 .flash-sale .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 30rem;
     margin-bottom: 4rem;
+    background-color: var(--color-theme);
 }
-    .flash-sale .container .flash-sale-banner{
+    .flash-sale .container .banner-holder{
+        display: flex;
+        align-items: center;
+    }
+    .flash-sale .container .banner-holder .flash-sale-banner{
         background-color: var(--color-theme);
         color: var(--color-white);
         text-align: center;
-        padding: 2.5rem 2rem;
     }
-            .flash-sale .container .flash-sale-banner h1{
+            .flash-sale .container .banner-holder .flash-sale-banner h1{
                 font-family: var(--font-play);
                 font-weight: var(--font-weight-bold);
                 font-size: var(--font-size-60);
             }
-            .flash-sale .container .flash-sale-banner p{
+            .flash-sale .container .banner-holder .flash-sale-banner p{
                 font-size: 1.5rem;
                 font-weight: var(--font-weight-medium);
                 margin: 0;
             }
+            .flash-sale .container .banner-holder .flash-sale-banner button{
+                background-color: var(--color-theme-dark);
+                color: var(--color-white);
+                transition: 0.2s ease-in-out;
+            }
+                .flash-sale .container .banner-holder .flash-sale-banner button:hover{
+                    background-color: var(--color-white);
+                    color: var(--color-theme);
+                }
+
         .flash-sale .container button{
         background-color: var(--color-white);
         color: var(--color-theme);
@@ -620,6 +634,13 @@ html, body {
             background-color: var(--color-theme);
             color: var(--color-white);
         }
+    
+    .flash-sale .flash-sale-right{
+        display: none !important;
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .flash-sale .circle-holder{
         display: flex;
     }
@@ -635,9 +656,6 @@ html, body {
             justify-content: center;
             margin: 1rem;
         }
-            .flash-sale .circle-holder .circle:last-child{
-                margin-right: 0rem;
-            }
         .flash-sale .circle-holder h1{
             display: block;
             font-family: var(--font-play);
@@ -704,7 +722,7 @@ div[id^="top-sellers-card-"] .card .card-body{
 }
 #top-sellers-card-1 .card-background{
     height: 7.5%;
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
     #top-sellers-card-1:hover .card-background{
         height: 100%;
@@ -863,11 +881,36 @@ footer .footer-copyright{
             .new-customer .new-customer-discount h1 span{
                 font-size: var(--font-size-36);
             }
-
+        
     /* featured-products */
     .featured-products .section-title p{
         display: block;
     }
+
+    /* flash-sale */
+    .flash-sale .container{
+        background-color: var(--color-theme-lighter-dark);
+        flex-direction: column;
+        justify-content: start;
+    }
+        .flash-sale .container .banner-holder{
+            display: flex;
+            align-items: start;
+            height: auto !important;
+            margin-bottom: 0.7rem;
+        }
+        .flash-sale .container .banner-holder .flash-sale-banner{
+            padding: 1rem 2rem;
+        }
+            .flash-sale .container .banner-holder .flash-sale-banner button{
+                display: none;
+            }
+        .flash-sale .flash-sale-right{
+            display: flex !important;
+        }
+            .flash-sale .flash-sale-right button{
+                margin-top: 0;
+            }
 
     /* top-sellers */
     .top-sellers .section-title p{
@@ -1232,6 +1275,32 @@ footer .footer-copyright{
     /* featured-products */
     .featured-products .col:last-child{
         display: none;
+    }
+
+    /* flash-sale */
+    .flash-sale .container{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .flash-sale .container .banner-holder{
+        align-items: start;
+        height: 100% !important;
+        margin-bottom: 0;
+    }
+        .flash-sale .container .banner-holder .flash-sale-banner button{
+            display: none;
+        }
+    .flash-sale .container .flash-sale-banner{
+        padding: 2.5rem 2rem;
+    }
+    .flash-sale .flash-sale-right button{
+            margin-top: 1rem;
+    }
+    .flash-sale .circle-holder .circle:last-child{
+        margin-right: 0rem;
+    }
+    .flash-sale .flash-sale-right{
+        display: flex !important;
     }
 
     /* top-sellers */
