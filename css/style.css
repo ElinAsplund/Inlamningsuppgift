@@ -671,28 +671,39 @@ html, body {
 #top-sellers-card-1{
     grid-column: 1/2;
     grid-row: 1/-1;
+    width: 636px;
+    flex: 1;
 }
 #top-sellers-card-2{
     grid-column: 2/-1;
     grid-row: 1/2;
+    width: 636px;
+    flex: 1;
 }
 #top-sellers-card-3{
     grid-column: 2/-1;
     grid-row: 2/-1;
+    width: 636px;
 }
-
+div[id^="top-sellers-card-"] .card .card-menu{
+    right: 2rem;
+}
+/* https://stackoverflow.com/questions/36772973/selecting-multiple-elements-with-same-classname-using-css */
+div[id^="top-sellers-card-"] .card .card-body{
+    padding: 2rem;
+}
 #top-sellers-card-1 .card-body{
-    height: 7.5%;
+    height: 4.5rem;
     transition: 0.3s ease-in-out;
 }
     #top-sellers-card-1:hover .card-body{
-        height: 21%;
+        height: 11rem;
     }
 #top-sellers-card-1 img{
-    height: 700px;
+    padding-top: 2rem;
 }
 #top-sellers-card-1 .card-background{
-    height: 8%;
+    height: 7.5%;
     transition: 0.3s ease-in-out;
 }
     #top-sellers-card-1:hover .card-background{
@@ -999,18 +1010,18 @@ footer .footer-copyright{
         width: 325px;
     }
         .top-sellers .card .card-body{
-            height: 15%;
+            height: 4.5rem;
         }
 
         /* top-sellers: activating hovering-effects */
         .top-sellers .card:hover .card-body{
-            height: 43%;
+            height: 11rem;
         }
         .top-sellers .card:hover .card-body h1{
             margin-bottom: 0rem;
         }
         .top-sellers .card:hover .card-menu{
-            top: 0.8rem;
+            top: 2rem;
         }
         .top-sellers .card .card-menu li a:hover{
             color: var(--color-theme);
