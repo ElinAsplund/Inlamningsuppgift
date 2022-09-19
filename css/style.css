@@ -180,7 +180,14 @@ html, body {
         font-size: 0.875rem;
     }
 
-    .form-theme form input{
+    .form-theme form input[type=checkbox]{
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+    }
+    .form-theme form input[type=text],
+    .form-theme form input[type=email],
+    .form-theme form input[type=password]{
         display: block;
         width: 100%;
         border: none;
@@ -188,22 +195,10 @@ html, body {
         padding: 0.6rem 0.9rem;
         margin: 0.2rem 0;
     }
-    .form-theme form input:focus{
-        box-shadow: 0 0 3px 0 var(--color-grey-0);
-        outline: none;
-    }
-    .form-theme form a{
-        color: var(--color-theme);
-        font-weight: var(--font-weight-medium);
-        text-decoration: none;
-        transition: 0.2s ease-in-out;
-    }
-        .form-theme form a:hover{
-            color: var(--color-theme-dark);
-            text-decoration: underline;
+        .form-theme form input:focus{
+            box-shadow: 0 0 3px 0 var(--color-grey-0);
+            outline: none;
         }
-        
-
 
 /*-------------------------------TOP-MENU------------------------------- */
 .top-menu {
@@ -883,6 +878,40 @@ footer .footer-copyright .container{
     padding: 2rem 0;
     align-items: start;
 }
+#signinForm a{
+    color: var(--color-theme);
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+    #signinForm a:hover{
+        color: var(--color-theme-dark);
+        text-decoration: underline;
+    }
+.signup-signin .login-form .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+    .signup-signin .login-form .grid p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: var(--font-weight-medium);
+        margin: 0;
+        padding: 0 1rem;
+    }
+
+
+#signupForm a{
+    color: var(--color-theme);
+    font-weight: var(--font-weight-medium);
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+    #signupForm a:hover{
+        color: var(--color-theme-dark);
+        text-decoration: underline;
+    }
+
 
 /*------------------MEDIA QUERIES: RESPONSIVE DESIGN---------------------*/
 /* --------------------------576px----------------------------- */
