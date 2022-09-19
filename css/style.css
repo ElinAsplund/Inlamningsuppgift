@@ -3,6 +3,7 @@
 @import url('variables.css');
 
 /*----------------------------STANDARD VALUES----------------------------*/
+
 /* body */
 html, body {
     font-size: 16px;
@@ -23,6 +24,10 @@ html, body {
 .outofstock{
     color: var(--color-product-outofstock);
 }
+.required{
+    color: var(--color-theme);
+}
+
 
 /* button */
 .btn-theme {
@@ -38,6 +43,7 @@ html, body {
       background-color: var(--color-theme-dark);
       color: var(--color-white);  
     }
+
 
 /* section-title */
 .section-title{
@@ -56,6 +62,7 @@ html, body {
     .section-title p{
         margin: 1rem 0;
     }
+
 
 /* cards */
 .card-holder{
@@ -150,7 +157,54 @@ html, body {
         transition: height 0.3s ease-in-out;
     }
 
+
+/* form-theme */
+.form-theme{
+    border-radius: var(--border-radius-small);
+    background-color: var(--color-grey-4);
+    width: 100%;
+    padding: 1.5rem;
+}
+    .form-theme .card-body h1{
+        color: var(--color-theme-dark);
+        font-family: var(--font-roboto);
+        font-weight: var(--font-weight-medium);
+        font-size: 1.5rem;
+    }
+    .form-theme .card-body .card-text{
+        margin: 1.5rem 0;
+        line-height: 2rem;
+    }
+    .form-theme .card-body .card-text.text-small{
+        color: var(--color-grey-5);
+        font-size: 0.875rem;
+    }
+
+    .form-theme form input{
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: var(--border-radius-small);
+        padding: 0.6rem 0.9rem;
+        margin: 0.2rem 0;
+    }
+    .form-theme form input:focus{
+        box-shadow: 0 0 3px 0 var(--color-grey-0);
+        outline: none;
+    }
+    .form-theme form a{
+        color: var(--color-theme);
+        font-weight: var(--font-weight-medium);
+        text-decoration: none;
+        transition: 0.2s ease-in-out;
+    }
+        .form-theme form a:hover{
+            color: var(--color-theme-dark);
+            text-decoration: underline;
+        }
         
+
+
 /*-------------------------------TOP-MENU------------------------------- */
 .top-menu {
     background-color: var(--color-theme);
@@ -286,7 +340,7 @@ html, body {
 /*------------------.main-menu > nav--------------------------- */
     .main-menu nav {
         border-top: 1px solid var(--color-grey-2);
-        border-bottom: 1px solid var(--color-grey-2);
+        /* border-bottom: 1px solid var(--color-grey-2); */
     }
         .main-menu > nav > .container {
             display: flex;
@@ -788,6 +842,7 @@ footer .footer-copyright .container{
 /*------------------------------BREADCRUMB-------------------------------*/
 .breadcrumb{
     background-color: var(--color-theme-lighter-dark);
+    margin: 0;
 }
 .breadcrumb .container{
     display: flex;
@@ -808,13 +863,26 @@ footer .footer-copyright .container{
         color: var(--color-theme);
         text-decoration: none;
     }
+        .breadcrumb a:hover{
+            color: var(--color-white);
+            text-decoration: underline;
+        }
     .breadcrumb .breadcrumb-item{
         color: var(--color-white);
     }
         .breadcrumb .breadcrumb-item::before{
             color: var(--color-white);
+            margin: 0 0.5rem;
         }
 
+/*----------------------------SIGNUP-SIGNIN------------------------------*/
+.signup-signin .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
+    align-items: start;
+}
 
 /*------------------MEDIA QUERIES: RESPONSIVE DESIGN---------------------*/
 /* --------------------------576px----------------------------- */
