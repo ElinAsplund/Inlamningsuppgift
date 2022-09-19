@@ -784,6 +784,37 @@ footer .footer-copyright .container{
     footer .footer-copyright p{
         margin: 0;
     }
+/*---------------------------MY-ACCOUNT-PAGE-----------------------------*/
+/*------------------------------BREADCRUMB-------------------------------*/
+.breadcrumb{
+    background-color: var(--color-theme-lighter-dark);
+}
+.breadcrumb .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+}
+    .breadcrumb h1{
+        color: var(--color-theme);
+        font-size: 1.5rem;
+        font-weight: var(--font-weight-regular);
+        margin: 0;
+    }
+    .breadcrumb ol{
+        margin: 0;
+    }
+    .breadcrumb a{
+        color: var(--color-theme);
+        text-decoration: none;
+    }
+    .breadcrumb .breadcrumb-item{
+        color: var(--color-white);
+    }
+        .breadcrumb .breadcrumb-item::before{
+            color: var(--color-white);
+        }
+
 
 /*------------------MEDIA QUERIES: RESPONSIVE DESIGN---------------------*/
 /* --------------------------576px----------------------------- */
