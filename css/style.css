@@ -163,7 +163,7 @@ html, body {
     border-radius: var(--border-radius-small);
     background-color: var(--color-grey-4);
     width: 100%;
-    padding: 1.5rem;
+    padding: 2rem;
 }
     .form-theme .card-body h1{
         color: var(--color-theme-dark);
@@ -179,7 +179,10 @@ html, body {
         color: var(--color-grey-5);
         font-size: 0.875rem;
     }
-
+    .form-theme .card-body button{
+        font-size: 1.125rem;
+        padding: 0.8rem 0;
+    }
     .form-theme form input[type=checkbox]{
         height: 20px;
         width: 20px;
@@ -802,20 +805,47 @@ footer .container{
         margin-bottom: 1.5rem;
         text-align: center;
     }
-    footer .footer-subscribe .subscribe-now .subscribe-email{
+    footer .footer-subscribe .subscribe-now #subscribeForm{
         width: 80%;
-        padding: 0.5rem;
-        text-align: center;
         background-color: var(--color-white);
-        color: var(--color-grey-0);
         border-radius: var(--border-radius-medium);
+        height: 45px;
+        margin: left;
+        position: relative;
     }
+        footer .footer-subscribe .subscribe-now #subscribeForm input{
+            position: absolute;
+            border-radius: var(--border-radius-medium);
+            height: 100%;
+            width: 100%;
+            outline: none;
+            border: 1px var(--color-grey-2) solid; 
+            font-size: 0.9rem;
+            padding-left: 1.3rem;
+        }
+        footer .footer-subscribe .subscribe-now #subscribeForm button{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            height: 80%;
+            background-color: var(--color-theme);
+            color: var(--color-white);
+            border: none;
+            border-radius: var(--border-radius-medium);
+            padding-left: 1rem;
+            padding-right: 1rem;
+            transition: 0.2s ease-in-out;
+        }
+            footer .footer-subscribe .subscribe-now #subscribeForm button:hover{
+                background-color: var(--color-theme-dark);
+            }
     footer .footer-subscribe .blank-placeholder{
         display: none;
         background-color: var(--color-grey-1);
         width: 45%;
         height: 100%;
     }
+
 /*---------------footer > .footer-copyright---------------------*/
 footer .footer-copyright{    
     background-color: var(--color-dark);
@@ -833,6 +863,7 @@ footer .footer-copyright .container{
     footer .footer-copyright p{
         margin: 0;
     }
+    
 /*---------------------------MY-ACCOUNT-PAGE-----------------------------*/
 /*------------------------------BREADCRUMB-------------------------------*/
 .breadcrumb{
@@ -875,7 +906,8 @@ footer .footer-copyright .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    padding: 2rem 0;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     align-items: start;
 }
 #signinForm a{
@@ -899,7 +931,30 @@ footer .footer-copyright .container{
         margin: 0;
         padding: 0 1rem;
     }
-
+    .signup-signin .login-form .button-holder button{
+        color: var(--color-white);
+        width: 100%;
+        border: none;
+        border-radius: var(--border-radius-small);
+        transition: 0.2s ease-in-out;
+    }
+        .signup-signin .login-form .button-holder button:hover{
+            background-color: var(--color-theme-dark);
+        }
+    .signup-signin .login-form .facebook-btn{
+        background-color: #3B5998;
+        position: relative;
+    }
+    .signup-signin .login-form .google-btn{
+        background-color: #4285F4;
+        position: relative;
+    }
+        .signup-signin .login-form .facebook-btn img,
+        .signup-signin .login-form .google-btn img{
+            position: absolute;
+            top: center;
+            left: 1rem;
+        }
 
 #signupForm a{
     color: var(--color-theme);
@@ -1090,12 +1145,38 @@ footer .footer-copyright .container{
     .main-menu .search{
         display: block;
         flex: 3.5;
-        border: 1px var(--color-grey-0) solid;
-        border-radius: var(--border-radius-medium);
-        text-align: center;
-        padding: 0.5rem;
-        color: var(--color-grey-0);
     }
+        .main-menu .search #searchboxForm{
+            border-radius: var(--border-radius-medium); 
+            height: 45px;
+            margin: auto;
+            position: relative;
+        }
+            .main-menu .search #searchboxForm input{
+                position: absolute;
+                border-radius: var(--border-radius-medium);
+                height: 100%;
+                width: 100%;
+                outline: none;
+                border: 1px var(--color-grey-2) solid; 
+                font-size: 0.9rem;
+                padding-left: 1.3rem;
+            }
+            .main-menu .search #searchboxForm button{
+                position: absolute;
+                top: 0;
+                right: -2px;
+                width: 50px;
+                height: 100%;
+                background-color: var(--color-theme);
+                color: var(--color-white);
+                border: none;
+                border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
+                transition: 0.2s ease-in-out;
+            }
+                .main-menu .search #searchboxForm button:hover{
+                    background-color: var(--color-theme-dark);
+                }
     .main-menu .menu-links{
         flex: 3;
     }
