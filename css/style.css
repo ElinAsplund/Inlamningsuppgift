@@ -329,9 +329,10 @@ html, body {
                     background-color: var(--color-theme);
                     position: absolute;
                     top: -0.8rem;
-                    left: 0.4rem;
+                    left: 0.4rem;                    
+                    transition: 0.1s ease-in-out;
                 }
-                    .main-menu .menu-links #cart:hover .badge{
+                    .main-menu .menu-link:last-child:hover#cart .badge{
                         background-color: var(--color-theme-dark);
                     }
 
@@ -360,7 +361,7 @@ html, body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0.7rem 1rem;
+            padding: 0.75rem;
             transition: 0.2s ease-in-out;
         }
             .main-menu .browse-categories button:hover {
@@ -842,7 +843,7 @@ footer .container{
     footer .footer-subscribe .blank-placeholder{
         display: none;
         background-color: var(--color-grey-1);
-        width: 45%;
+        width: 47%;
         height: 100%;
     }
 
@@ -872,15 +873,17 @@ footer .footer-copyright .container{
 }
 .breadcrumb .container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     height: 7rem;
 }
     .breadcrumb h1{
+        display: block;
         color: var(--color-theme);
         font-size: 1.5rem;
         font-weight: var(--font-weight-regular);
         margin: 0;
+        margin-bottom: 0.3rem;
     }
     .breadcrumb ol{
         margin: 0;
@@ -903,12 +906,10 @@ footer .footer-copyright .container{
 
 /*----------------------------SIGNUP-SIGNIN------------------------------*/
 .signup-signin .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    align-items: start;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 0;
+    width: 100%;
 }
 #signinForm a{
     color: var(--color-theme);
@@ -919,42 +920,50 @@ footer .footer-copyright .container{
         color: var(--color-theme-dark);
         text-decoration: underline;
     }
-.signup-signin .login-form .grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.signup-signin .login-form{
+    margin-bottom: 4rem;
 }
-    .signup-signin .login-form .grid p{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: var(--font-weight-medium);
-        margin: 0;
-        padding: 0 1rem;
+    .signup-signin .login-form .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    .signup-signin .login-form .button-holder button{
-        color: var(--color-white);
-        width: 100%;
-        border: none;
-        border-radius: var(--border-radius-small);
-        transition: 0.2s ease-in-out;
-    }
-        .signup-signin .login-form .button-holder button:hover{
-            background-color: var(--color-theme-dark);
+        .signup-signin .login-form .grid p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: var(--font-weight-medium);
+            margin: 0;
+            padding: 0 1rem;
         }
-    .signup-signin .login-form .facebook-btn{
-        background-color: #3B5998;
-        position: relative;
-    }
-    .signup-signin .login-form .google-btn{
-        background-color: #4285F4;
-        position: relative;
-    }
-        .signup-signin .login-form .facebook-btn img,
-        .signup-signin .login-form .google-btn img{
-            position: absolute;
-            top: center;
-            left: 1rem;
+        .signup-signin .login-form .button-holder{
+            display: flex;
+            flex-direction: column;
         }
+        .signup-signin .login-form .button-holder button{
+            color: var(--color-white);
+            width: 100%;
+            border: none;
+            border-radius: var(--border-radius-small);
+            transition: 0.2s ease-in-out;
+        }
+            .signup-signin .login-form .button-holder button:hover{
+                background-color: var(--color-theme-dark);
+            }
+        .signup-signin .login-form .facebook-btn{
+            position: relative;
+            background-color: #3B5998;
+            margin-bottom: 0.5rem;
+        }
+        .signup-signin .login-form .google-btn{
+            position: relative;
+            background-color: #4285F4;
+        }
+            .signup-signin .login-form .facebook-btn img,
+            .signup-signin .login-form .google-btn img{
+                position: absolute;
+                top: center;
+                left: 1rem;
+            }
 
 #signupForm a{
     color: var(--color-theme);
@@ -1146,6 +1155,30 @@ footer .footer-copyright .container{
             top: 5px;
             right: 5px;
         }
+    
+    /* breadcrumb */
+    .breadcrumb .container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .breadcrumb h1{
+            margin: 0;
+        }
+
+    /* signup-signin */
+    .signup-signin .container{
+        margin: auto;
+    }
+    .signup-signin .login-form .card-body #signinForm .password-query{
+        flex-direction: row !important;
+    }
+    .signup-signin .login-form .button-holder{
+        flex-direction: row;
+    }
+    .signup-signin .login-form .facebook-btn{
+        margin-bottom: 0;
+    }
 }
 
 /* --------------------------768px----------------------------- */
@@ -1159,6 +1192,7 @@ footer .footer-copyright .container{
     .main-menu .brand{
         flex: 3.5;
     }
+
     .main-menu .search{
         display: block;
         flex: 3.5;
@@ -1191,9 +1225,15 @@ footer .footer-copyright .container{
                 border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
                 transition: 0.2s ease-in-out;
             }
-                .main-menu .search #searchboxForm button:hover{
-                    background-color: var(--color-theme-dark);
+                    .main-menu .search #searchboxForm button:hover{
+                        background-color: var(--color-theme-dark);
+                    }
+                .main-menu .search #searchboxForm button i{ 
+                    position: absolute;
+                    top: 15px;
+                    right: 20px;
                 }
+
     .main-menu .menu-links{
         flex: 3;
     }
@@ -1354,6 +1394,16 @@ footer .footer-copyright .container{
     }
     .top-sellers .card:hover .card-background{
         height: 100%;
+    }
+
+    /* signup-signup */
+    .signup-signin .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .signup-signin .form-theme{
+        width: 516px;
     }
 }
 
@@ -1535,6 +1585,25 @@ footer .footer-copyright .container{
         }
         footer .footer-subscribe .blank-placeholder{
             display: block;
+        }
+
+    /* signup-signin */
+    .signup-signin .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        align-items: start;
+    }
+    .signup-signin .form-theme{
+        width: 100%;
+    }
+    .signup-signin .login-form{
+        margin-bottom: 0;
+    }
+        .signup-signin .login-form .facebook-btn{
+            margin-bottom: 0;
         }
 }
 
