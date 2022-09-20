@@ -784,7 +784,7 @@ footer .footer-subscribe{
 footer .container{
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center; 
 }
     footer .footer-subscribe .subscribe-now{
         display: flex;
@@ -804,17 +804,18 @@ footer .container{
     footer .footer-subscribe .subscribe-now p{
         margin-bottom: 1.5rem;
         text-align: center;
+        width: 80%;
     }
     footer .footer-subscribe .subscribe-now #subscribeForm{
         width: 80%;
-        background-color: var(--color-white);
         border-radius: var(--border-radius-medium);
-        height: 45px;
-        margin: left;
-        position: relative;
+        height: 100px;
+        margin: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
         footer .footer-subscribe .subscribe-now #subscribeForm input{
-            position: absolute;
             border-radius: var(--border-radius-medium);
             height: 100%;
             width: 100%;
@@ -822,12 +823,11 @@ footer .container{
             border: 1px var(--color-grey-2) solid; 
             font-size: 0.9rem;
             padding-left: 1.3rem;
+            margin-bottom: 10px;
         }
         footer .footer-subscribe .subscribe-now #subscribeForm button{
-            position: absolute;
-            top: 5px;
-            right: 5px;
             height: 80%;
+            width: 150px;
             background-color: var(--color-theme);
             color: var(--color-white);
             border: none;
@@ -1129,6 +1129,23 @@ footer .footer-copyright .container{
         grid-column: 2/-1;
         grid-row: 2/-1;
     }
+
+    /* footer */
+    footer .footer-subscribe .subscribe-now #subscribeForm{
+        height: 45px;
+        margin: left;
+        position: relative;
+    }
+        footer .footer-subscribe .subscribe-now #subscribeForm input{
+            position: absolute;
+            padding-left: 1.3rem;
+	        margin-bottom: 0;
+        }
+        footer .footer-subscribe .subscribe-now #subscribeForm button{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
 }
 
 /* --------------------------768px----------------------------- */
@@ -1337,7 +1354,7 @@ footer .footer-copyright .container{
     }
     .top-sellers .card:hover .card-background{
         height: 100%;
-    }        
+    }
 }
 
 /* ----------------------------992px--------------------------- */
