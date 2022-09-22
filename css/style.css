@@ -96,6 +96,7 @@ html, body {
         pointer-events: none;
     }
         .card .card-body h1{
+            position: relative;
             font-size: 0.9rem;
             margin-bottom: 1rem;
             font-weight: var(--font-weight-regular);
@@ -121,6 +122,7 @@ html, body {
             margin: 0;
         }
     .card .centering-icons{
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;       
@@ -130,7 +132,7 @@ html, body {
         }
     .card .card-menu{
         position: absolute;
-        z-index: 1;
+        z-index: 2;
         top: 300%;
         right: 1rem;
         list-style: none;
@@ -142,11 +144,23 @@ html, body {
         transition: top 0.3s ease-in-out;
     }
         .card .card-menu li{
+            position: relative;
             margin: 0.3rem 0;
         }
+            .card .card-menu li img{
+                position: absolute;
+                right: 32px;
+                display: none;
+                transition: 0.3s ease-in-out;
+            }
+                .card .card-menu li:hover img{
+                    display: block;
+                }
             .card .card-menu li a{
                 color: var(--color-grey-0);
             }
+        
+
     .card .card-background{
         position: absolute;
         bottom: 0;
@@ -771,6 +785,9 @@ div[id^="top-sellers-card-"]{
 }
 #top-sellers-card-1 img{
     padding-top: 1.5rem;
+}
+#top-sellers-card-1 .card-menu li img{
+    top: -40px;
 }
 #top-sellers-card-1 .card-background{
     height: 12%;
