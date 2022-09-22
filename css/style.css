@@ -185,6 +185,14 @@ html, body {
         font-weight: var(--font-weight-medium);
         font-size: 1.5rem;
     }
+    .form-theme .card-body .error-message{
+        display: none;
+        color: var(--color-product-outofstock);
+        font-weight: var(--font-weight-bold);
+        background-color: #ffdcdc;
+        padding: 0.5rem 1rem;
+        border-radius: var(--border-radius-small);
+    }
     .form-theme .card-body .card-text{
         margin: 1.5rem 0;
         line-height: 2rem;
