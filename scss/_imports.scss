@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
-@import "./components/button";
-@import "./components/sectiontitle";
-@import "./components/card";
-
 @import "./core/variables";
 @import "./core/root";
 
-@import "./sections/topmenu"
+@import "./components/button";
+@import "./components/sectiontitle";
+@import "./components/card";
+@import "./components/formtheme";
+
+@import "./sections/topmenu";
+@import "./sections/mainmeny";
