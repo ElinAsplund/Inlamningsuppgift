@@ -93,7 +93,6 @@ html, body {
         transition: 0.3s ease-in-out;
         font-size: 1rem;
         padding: 1rem;
-        pointer-events: none;
     }
         .card .card-body h1{
             position: relative;
@@ -102,6 +101,16 @@ html, body {
             font-weight: var(--font-weight-regular);
             transition: 0.3s ease-in-out;
         }
+        .card .card-body a{
+            color: var(--color-white);
+            text-decoration: none;
+        }
+            .card .card-body a h1{
+                transition: 0.2s ease-in-out;
+            }
+                .card .card-body a h1:hover{
+                    color: var(--color-theme);
+                }
         .card .card-body button{
             background-color: transparent;
             color: var(--color-white);
@@ -132,7 +141,7 @@ html, body {
         }
     .card .card-menu{
         position: absolute;
-        z-index: 2;
+        z-index: 3;
         top: 300%;
         right: 1rem;
         list-style: none;
