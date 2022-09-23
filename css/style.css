@@ -169,6 +169,7 @@ html, body {
             }
                 .card .card-menu li:hover img{
                     display: block;
+                    filter: drop-shadow(-30px 0px 30px #0a0f2b);
                 }
             .card .card-menu li a{
                 color: var(--color-grey-0);
