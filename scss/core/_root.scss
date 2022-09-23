@@ -1,0 +1,23 @@
+html, body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: $font-roboto;
+    font-weight: $font-weight-regular;
+    color: $color-theme-dark;
+}
+
+.bg-theme{
+    background-color: $color-theme;}
+
+.text-theme{
+    color: $color-theme;
+}
+.instock{
+    color: $color-product-instock;
+}
+.outofstock{
+    color: $color-product-outofstock;
+}
+.required{
+    color: $color-theme;
+}
