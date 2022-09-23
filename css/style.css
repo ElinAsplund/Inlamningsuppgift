@@ -205,7 +205,7 @@ html, body {
         display: none;
         color: var(--color-product-outofstock);
         font-weight: var(--font-weight-bold);
-        background-color: #ffdcdc;
+        background-color: #ffeded;
         padding: 0.5rem 1rem;
         border-radius: var(--border-radius-small);
     }
@@ -1411,15 +1411,15 @@ footer .footer-copyright .container{
     }
         div[id^="top-sellers-card-"] .card .card-menu{
             right: 2rem;
-            transition: 0.3s ease-in-out;
+            transition:0.4s ease-in-out;
         }
         div[id^="top-sellers-card-"] .card .card-body{
             padding: 2rem;
-            transition: 0.3s ease-in-out;
+            transition: 0.4s ease-in-out;
         }
         div[id^="top-sellers-card-"] .card .card-background{
             height: 19%;
-            transition: 0.3s ease-in-out;
+            transition: 0.4s ease-in-out;
         }
 
     #top-sellers-card-1 img{
