@@ -81,7 +81,7 @@ html, body {
     position: relative;
     overflow: hidden;
     border: none;
-    background-color: $color-grey-3;
+    background-color: $color-grey-4;
 }
     .card .card-body{
         position: absolute;
@@ -172,7 +172,7 @@ html, body {
                     filter: drop-shadow(-30px 0px 30px #0a0f2b);
                 }
             .card .card-menu li a{
-                color: $color-grey-0;
+                color: $color-grey-1;
             }
     .card .card-background{
         position: absolute;
@@ -191,7 +191,7 @@ html, body {
 /* form-theme */
 .form-theme{
     border-radius: $border-radius-small;
-    background-color: $color-grey-4;
+    background-color: $color-grey-5;
     width: 100%;
     padding: 2rem;
 }
@@ -214,7 +214,7 @@ html, body {
         line-height: 2rem;
     }
     .form-theme .card-body .card-text.text-small{
-        color: $color-grey-5;
+        color: $color-grey-0;
         font-size: 0.875rem;
     }
     .form-theme .card-body button{
@@ -237,7 +237,7 @@ html, body {
         margin: 0.2rem 0;
     }
         .form-theme form input:focus{
-            box-shadow: 0 0 3px 0 $color-grey-0;
+            box-shadow: 0 0 3px 0 $color-grey-1;
             outline: none;
         }
 
@@ -376,8 +376,8 @@ html, body {
 
 /*------------------.main-menu > nav--------------------------- */
     .main-menu nav {
-        border-top: 1px solid $color-grey-2;
-        /* border-bottom: 1px solid $color-grey-2; */
+        border-top: 1px solid $color-grey-3;
+        /* border-bottom: 1px solid $color-grey-3; */
     }
         .main-menu > nav > .container {
             display: flex;
@@ -436,7 +436,7 @@ html, body {
 
 /*--------------------------------SHOWCASE-------------------------------*/
 .showcase{
-    background-color: $color-grey-3;
+    background-color: $color-grey-4;
 }
 .showcase .container{
     display: flex;
@@ -543,7 +543,7 @@ html, body {
     grid-template-rows: repeat(2, minmax(100px, 150px));
 }
     .shop-by-category .grid .category-box{
-        background-color: $color-grey-1;
+        background-color: $color-grey-2;
         border-radius: $border-radius-small;
         overflow: hidden;
         position: relative;
@@ -836,7 +836,7 @@ div[id^="top-sellers-card-"]{
 /*-------------------------------FOOTER----------------------------------*/
 /*---------------footer > .footer-subscribe---------------------*/
 footer .footer-subscribe{
-    background-color: $color-grey-4;
+    background-color: $color-grey-5;
 }
 footer .container{
     display: flex;
@@ -877,7 +877,7 @@ footer .container{
             height: 100%;
             width: 100%;
             outline: none;
-            border: 1px $color-grey-2 solid; 
+            border: 1px $color-grey-3 solid; 
             font-size: 0.9rem;
             padding-left: 1.3rem;
             margin-bottom: 10px;
@@ -898,7 +898,7 @@ footer .container{
             }
     footer .footer-subscribe .blank-placeholder{
         display: none;
-        background-color: $color-grey-1;
+        background-color: $color-grey-2;
         width: 47%;
         height: 100%;
     }
@@ -1123,7 +1123,7 @@ footer .footer-copyright .container{
 
     /* new-customer */
     .new-customer{
-        background-color: $color-grey-1;
+        background-color: $color-grey-2;
     }
     .new-customer .new-customer-discount{
         padding: 0 2rem;
@@ -1264,7 +1264,7 @@ footer .footer-copyright .container{
                 height: 100%;
                 width: 100%;
                 outline: none;
-                border: 1px $color-grey-2 solid; 
+                border: 1px $color-grey-3 solid; 
                 font-size: 0.9rem;
                 padding-left: 1.3rem;
             }
