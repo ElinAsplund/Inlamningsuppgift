@@ -56,54 +56,51 @@
         }
     }
 
-    .top-menu-right .menu-links {
-        display: none;
+    .top-menu-right{
 
-        @include sm {
-            display: block;
-            padding: 0.8rem 0;
+        @include lg {
             display: flex;
+            align-items: center;
         }
-
-        a {
-            transition: 0.2s ease-in-out;
-
-            &:last-child{
-                @include sm{
-                    margin-right: 0;
-                }
-            } 
-        }
-    }
-
-    .top-menu-right .social-media {
-        display: none;
-    }  
-}
-
-
-
-
-
-
-        @media (min-width: 992px) {
-            /* top-menu */
-            .top-menu .top-menu-right{
+        .menu-links {
+            display: none;
+    
+            @include sm {
+                display: block;
+                padding: 0.8rem 0;
                 display: flex;
-                align-items: center;
             }
-                    .top-menu .top-menu-right .menu-links a:last-child{
+    
+            a {
+                transition: 0.2s ease-in-out;
+    
+                &:last-child{
+                    @include sm{
+                        margin-right: 0;
+                    }
+
+                    @include lg{
                         margin-right: 1.2rem;
                     }
-        
-                .top-menu .top-menu-right .social-media {
-                    display: block;
-                    margin-left: 1rem;
-                }
-                    .top-menu .top-menu-right .social-media a {
-                        margin: 0 0.3em;
-                    }
-                        .top-menu .top-menu-right .social-media a:last-child {
-                            margin: 0 0 0 0.3rem;
-                        }
+                } 
+            }
         }
+    
+        .social-media {
+            display: none;
+
+            @include lg{
+                display: block;
+                margin-left: 1rem;
+            }
+
+            a{
+                margin: 0 0.3em;
+
+                &:last-child{
+                    margin: 0 0 0 0.3rem;    
+                }
+            }
+        }  
+    }
+}

@@ -10,18 +10,98 @@
         padding-bottom: 1.8rem;
     }
 
-    .brand a{
-        display: flex;
-        align-items: center;
-
-        &> img{
-            width: 100%;
-            padding-right: 0.5rem;
+    .brand{
+        @include sm{
+            flex: 1;
         }
-    }
+        @include md{
+            flex: 3.5;
+        }
+        @include lg{
+            flex: 3;
+        }
+        @include xl{
+            flex: 3;
+        }
+        @include xxl{
+            flex: 3.5;
+        }
+
+        a{
+            display: flex;
+            align-items: center;
+
+            &> img{
+                width: 100%;
+                padding-right: 0.5rem;
+
+                @include sm {
+                    padding-right: 0;
+                    width: auto;
+                    height: 100%;
+                }
+            }
+        }
+    } 
 
     .search{
         display: none;
+
+        @include md {
+            display: block;
+            flex: 4;
+        }
+        @include lg {
+            flex: 3;
+        }
+        @include xl{
+            flex: 3.5;
+        }
+        @include xxl{
+            flex: 4;
+        }
+
+        #searchboxForm{
+            border-radius: $border-radius-medium; 
+            height: 45px;
+            margin: auto;
+            position: relative;
+
+
+            input{
+                position: absolute;
+                border-radius: $border-radius-medium;
+                height: 100%;
+                width: 100%;
+                outline: none;
+                border: 1px $color-grey-3 solid; 
+                font-size: 0.9rem;
+                padding-left: 1.3rem;
+            }
+
+            button{
+                position: absolute;
+                top: 0;
+                right: -2px;
+                width: 50px;
+                height: 100%;
+                background-color: $color-theme;
+                color: $color-white;
+                border: none;
+                border-radius: 0 $border-radius-medium $border-radius-medium 0;
+                transition: 0.2s ease-in-out;
+
+                &:hover{
+                    background-color: $color-theme-dark;
+                }
+
+                i{ 
+                    position: absolute;
+                    top: 15px;
+                    right: 20px;
+                }
+            }
+        }
     }
 
     .menu-links{
@@ -29,8 +109,20 @@
         justify-content: flex-end;
         align-items: center;
 
-        span{
-            display: none;
+        @include sm {
+            flex: 1;
+        }
+        @include md{
+            flex: 2.5;
+        }
+        @include lg{
+            flex: 4;
+        }
+        @include xl{
+            flex: 3.5;
+        }
+        @include xxl{
+            flex: 3;
         }
 
         .menu-link{
@@ -40,6 +132,11 @@
             display: flex;
             align-items: center;
 
+            @include lg{
+                margin: 0 0.3rem;
+            }
+
+
             &:hover{
                 color: $color-theme;
             }
@@ -47,15 +144,39 @@
             &:first-child{
                 margin-right: -0.35rem;
                 transition: 0.2s ease-in-out;
+
+                @include lg{
+                    margin-right: 2rem;
+                }
             }
 
             &:last-child{
                 margin-right: 0;
                 transition: 0.1s ease-in-out;
+
+                @include lg{
+                    margin-left: 0.5rem;
+                }
             }
 
             i{
                 font-size: 1.2rem;
+            }
+
+            span{
+                display: none;
+
+                @include lg{
+                    display: block;
+                }
+            }
+
+            .span-first{
+                margin-top: 2px;
+            }
+            .span-second{
+                margin-top: 3px;
+                margin-left: 1rem;
             }
         }
         
@@ -84,10 +205,24 @@
             justify-content: space-between;
             align-items: center;
             padding: 0;
+
+            @include sm {
+                padding: 0 12px;
+            }
         }
 
         .browse-categories {
             width: 100%;
+
+            @include sm {
+                flex: 1;
+            }
+            @include md{
+                flex: 3.5;
+            }
+            @include lg{
+                flex: 3;
+            }
 
             button {
                 background-color: $color-theme;
@@ -139,6 +274,20 @@
 
         .special-offer{
             display: none;
+
+            @include sm{
+                display: block;
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            @include md {
+                flex: 6.5;
+            }
+            @include lg{
+                flex: 7;
+            }
         }
     }
 }
