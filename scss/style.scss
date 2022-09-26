@@ -561,64 +561,64 @@
 //         display: none;
 //     }
 
-/*----------------------------NEW-CUSTOMER-------------------------------*/
-.new-customer{
-    background-color: $color-theme;
-}
-    .new-customer .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 25rem;
-        margin-bottom: 4rem;
-    }
+// /*----------------------------NEW-CUSTOMER-------------------------------*/
+// .new-customer{
+//     background-color: $color-theme;
+// }
+//     .new-customer .container{
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         height: 25rem;
+//         margin-bottom: 4rem;
+//     }
 
-/*-----------.new-customer > .new-customer-discount-------------*/
-    .new-customer .new-customer-discount{
-        background-color: $color-theme;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-        .new-customer .new-customer-discount h1{
-            font-family: $font-play;
-            font-weight: $font-weight-bold;
-            font-size: $font-size-60;
-            color: $color-white;
-        }
-            .new-customer .new-customer-discount h1 span{
-                font-size: $font-size-36;
-            }
-        .new-customer .new-customer-discount p{
-            color: $color-white;
-        }    
-        .new-customer .new-customer-discount button{
-            background-color: $color-theme-dark;
-            width: max-content;
-        }
-            .new-customer .new-customer-discount button:hover{
-                background-color: $color-white;
-                color: $color-theme;
-            }
+// /*-----------.new-customer > .new-customer-discount-------------*/
+//     .new-customer .new-customer-discount{
+//         background-color: $color-theme;
+//         height: 100%;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//     }
+//         .new-customer .new-customer-discount h1{
+//             font-family: $font-play;
+//             font-weight: $font-weight-bold;
+//             font-size: $font-size-60;
+//             color: $color-white;
+//         }
+//             .new-customer .new-customer-discount h1 span{
+//                 font-size: $font-size-36;
+//             }
+//         .new-customer .new-customer-discount p{
+//             color: $color-white;
+//         }    
+//         .new-customer .new-customer-discount button{
+//             background-color: $color-theme-dark;
+//             width: max-content;
+//         }
+//             .new-customer .new-customer-discount button:hover{
+//                 background-color: $color-white;
+//                 color: $color-theme;
+//             }
 
     
-/*---------------.new-customer > .learn-more--------------------*/
-        .new-customer .learn-more p{
-            display: none;
-            color: $color-white;
-            font-size: 0.9rem;
-        }
-        .new-customer .learn-more button{
-            display: none;
-            background-color: $color-white;
-            color: $color-theme;
-        }
-            .new-customer .learn-more button:hover{
-                background-color: $color-theme-dark;
-                color: $color-white;
-            }
+// /*---------------.new-customer > .learn-more--------------------*/
+//         .new-customer .learn-more p{
+//             display: none;
+//             color: $color-white;
+//             font-size: 0.9rem;
+//         }
+//         .new-customer .learn-more button{
+//             display: none;
+//             background-color: $color-white;
+//             color: $color-theme;
+//         }
+//             .new-customer .learn-more button:hover{
+//                 background-color: $color-theme-dark;
+//                 color: $color-white;
+//             }
 
 /*--------------------------FEATURED-PRODUCTS----------------------------*/
 .featured-products .section-title{
@@ -1081,19 +1081,19 @@ footer .footer-copyright .container{
         //     margin-bottom: 1rem;
         // }
 
-    /* new-customer */
-    .new-customer{
-        background-color: $color-grey-2;
-    }
-    .new-customer .new-customer-discount{
-        padding: 0 2rem;
-    }
-        .new-customer .new-customer-discount h1{
-            font-size: $font-size-60;
-        }
-            .new-customer .new-customer-discount h1 span{
-                font-size: $font-size-36;
-            }
+    // /* new-customer */
+    // .new-customer{
+    //     background-color: $color-grey-2;
+    // }
+    // .new-customer .new-customer-discount{
+    //     padding: 0 2rem;
+    // }
+    //     .new-customer .new-customer-discount h1{
+    //         font-size: $font-size-60;
+    //     }
+    //         .new-customer .new-customer-discount h1 span{
+    //             font-size: $font-size-36;
+    //         }
         
     /* featured-products */
     .featured-products .section-title p{
@@ -1535,32 +1535,32 @@ footer .footer-copyright .container{
     //         width: 75%;
     //     }
 
-    /* new-customer */
-    .new-customer .container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 25rem;
-        margin-bottom: 4rem;
-    }
-    .new-customer .new-customer-discount{
-        background-color: $color-theme;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0 2rem;
-    }
-    .new-customer .learn-more{
-        width: 35%;
-    }
-        .new-customer .learn-more p{
-            display: block;
-        }
-        .new-customer .learn-more button{
-            display: block;
-        }
+    // /* new-customer */
+    // .new-customer .container{
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     height: 25rem;
+    //     margin-bottom: 4rem;
+    // }
+    // .new-customer .new-customer-discount{
+    //     background-color: $color-theme;
+    //     height: 100%;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+    //     padding: 0 2rem;
+    // }
+    // .new-customer .learn-more{
+    //     width: 35%;
+    // }
+    //     .new-customer .learn-more p{
+    //         display: block;
+    //     }
+    //     .new-customer .learn-more button{
+    //         display: block;
+    //     }
 
     /* top-sellers */
     div[id^="top-sellers-card-"]{
