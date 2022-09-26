@@ -1014,6 +1014,56 @@ html, body {
   }
 }
 
+.new-arrivals .section-title {
+  padding-bottom: 0.75rem;
+}
+@media (min-width: 1200px) {
+  .new-arrivals .card-holder {
+    margin-bottom: 10rem;
+  }
+}
+@media (min-width: 1400px) {
+  .new-arrivals .card-holder {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+  .new-arrivals .card-holder .card-column {
+    height: 350px;
+    width: 325px;
+  }
+}
+@media (min-width: 1200px) {
+  .new-arrivals .card-holder .card-column:last-child {
+    display: none;
+  }
+}
+@media (min-width: 1400px) {
+  .new-arrivals .card-holder .card-column:last-child {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .new-arrivals .card-holder .card .card-body {
+    height: 15%;
+  }
+  .new-arrivals .card-holder .card:hover .card-body {
+    height: 45%;
+  }
+  .new-arrivals .card-holder .card:hover .card-body h1 {
+    margin-bottom: 0rem;
+  }
+  .new-arrivals .card-holder .card:hover .card-menu {
+    top: 0.8rem;
+  }
+  .new-arrivals .card-holder .card:hover .card-menu li a:hover {
+    color: #20D3C2;
+  }
+  .new-arrivals .card-holder .card:hover .card-background {
+    height: 100%;
+  }
+}
+
 /*----------------------------STANDARD VALUES----------------------------*/
 /* section-title */
 /* cards */
@@ -1035,14 +1085,6 @@ html, body {
 /*-----------------.shop-by-category > .grid--------------------*/
 /* category-box-n */
 /*----------------------------NEW-ARRIVALS-------------------------------*/
-.new-arrivals .section-title {
-  padding-bottom: 0.75rem;
-}
-
-.new-arrivals .section-title p {
-  display: none;
-}
-
 /*----------------------------NEW-CUSTOMER-------------------------------*/
 .new-customer {
   background-color: #20D3C2;
@@ -1666,29 +1708,6 @@ footer .footer-copyright p {
   /* shop-by-category */
   /* shop-by-category: category-box-n */
   /* new-arrivals */
-  .new-arrivals .card-column {
-    height: 350px;
-    width: 325px;
-  }
-  .new-arrivals .card .card-body {
-    height: 15%;
-  }
-  /* new-arrivals: activating hovering-effects */
-  .new-arrivals .card:hover .card-body {
-    height: 45%;
-  }
-  .new-arrivals .card:hover .card-body h1 {
-    margin-bottom: 0rem;
-  }
-  .new-arrivals .card:hover .card-menu {
-    top: 0.8rem;
-  }
-  .new-arrivals .card .card-menu li a:hover {
-    color: #20D3C2;
-  }
-  .new-arrivals .card:hover .card-background {
-    height: 100%;
-  }
   /* featured-products */
   .featured-products .card-column {
     height: 350px;
@@ -1866,13 +1885,6 @@ footer .footer-copyright p {
   /* main-menu */
   /* webshop-info */
   /* shop-by-category */
-  /* new-arrivals */
-  .new-arrivals .card-holder {
-    margin-bottom: 10rem;
-  }
-  .new-arrivals .card-column:last-child {
-    display: none;
-  }
   /* featured-products */
   .featured-products .card-column:last-child {
     display: none;
@@ -1923,13 +1935,6 @@ footer .footer-copyright p {
 @media (min-width: 1400px) {
   /* main-menu */
   /* shop-by-category */
-  /* new-arrivals */
-  .new-arrivals .card-holder {
-    justify-content: space-between;
-  }
-  .new-arrivals .card-column:last-child {
-    display: block;
-  }
   /* featured-products */
   .featured-products .card-holder {
     justify-content: space-between;
