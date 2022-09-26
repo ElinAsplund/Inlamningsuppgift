@@ -631,92 +631,92 @@
 //     margin-bottom: 10rem;
 // }
 
-/*-----------------------------FLASH-SALE--------------------------------*/
-.flash-sale{
-    background-color: $color-theme-lighter-dark;
-}
-.flash-sale .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30rem;
-    margin-bottom: 4rem;
-    background-color: $color-theme;
-}
-    .flash-sale .container .banner-holder{
-        display: flex;
-        align-items: center;
-    }
-    .flash-sale .container .banner-holder .flash-sale-banner{
-        background-color: $color-theme;
-        color: $color-white;
-        text-align: center;
-    }
-            .flash-sale .container .banner-holder .flash-sale-banner h1{
-                font-family: $font-play;
-                font-weight: $font-weight-bold;
-                font-size: $font-size-60;
-            }
-            .flash-sale .container .banner-holder .flash-sale-banner p{
-                font-size: 1.5rem;
-                font-weight: $font-weight-medium;
-                margin: 0;
-            }
-            .flash-sale .container .banner-holder .flash-sale-banner button{
-                background-color: $color-theme-dark;
-                color: $color-white;
-                transition: 0.2s ease-in-out;
-            }
-                .flash-sale .container .banner-holder .flash-sale-banner button:hover{
-                    background-color: $color-white;
-                    color: $color-theme;
-                }
+// /*-----------------------------FLASH-SALE--------------------------------*/
+// .flash-sale{
+//     background-color: $color-theme-lighter-dark;
+// }
+// .flash-sale .container{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 30rem;
+//     margin-bottom: 4rem;
+//     background-color: $color-theme;
+// }
+//     .flash-sale .container .banner-holder{
+//         display: flex;
+//         align-items: center;
+//     }
+//     .flash-sale .container .banner-holder .flash-sale-banner{
+//         background-color: $color-theme;
+//         color: $color-white;
+//         text-align: center;
+//     }
+//             .flash-sale .container .banner-holder .flash-sale-banner h1{
+//                 font-family: $font-play;
+//                 font-weight: $font-weight-bold;
+//                 font-size: $font-size-60;
+//             }
+//             .flash-sale .container .banner-holder .flash-sale-banner p{
+//                 font-size: 1.5rem;
+//                 font-weight: $font-weight-medium;
+//                 margin: 0;
+//             }
+//             .flash-sale .container .banner-holder .flash-sale-banner button{
+//                 background-color: $color-theme-dark;
+//                 color: $color-white;
+//                 transition: 0.2s ease-in-out;
+//             }
+//                 .flash-sale .container .banner-holder .flash-sale-banner button:hover{
+//                     background-color: $color-white;
+//                     color: $color-theme;
+//                 }
 
-        .flash-sale .container button{
-        background-color: $color-white;
-        color: $color-theme;
-        margin-top: 1rem;
-        transition: 0.2s ease-in-out;
-    }
-        .flash-sale .container button:hover{
-            background-color: $color-theme;
-            color: $color-white;
-        }
+//         .flash-sale .container button{
+//         background-color: $color-white;
+//         color: $color-theme;
+//         margin-top: 1rem;
+//         transition: 0.2s ease-in-out;
+//     }
+//         .flash-sale .container button:hover{
+//             background-color: $color-theme;
+//             color: $color-white;
+//         }
     
-    .flash-sale .flash-sale-right{
-        display: none !important;
-        flex-direction: column;
-        align-items: center;
-    }
+//     .flash-sale .flash-sale-right{
+//         display: none !important;
+//         flex-direction: column;
+//         align-items: center;
+//     }
     
-    .flash-sale .circle-holder{
-        display: flex;
-    }
-        .flash-sale .circle-holder .circle{
-            background-color: $color-white;
-            width: 7rem;
-            height: 7rem;
-            border-radius: $border-radius-rounded;
-            border: 3px dashed $color-theme;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: 1rem;
-        }
-        .flash-sale .circle-holder h1{
-            display: block;
-            font-family: $font-play;
-            font-weight: $font-weight-bold;
-            color: $color-theme;
-            margin: 0;
-            padding: 0;
-        }
-        .flash-sale .circle-holder p{
-            display: block;
-            margin: 0;
-            padding: 0;
-        }
+//     .flash-sale .circle-holder{
+//         display: flex;
+//     }
+//         .flash-sale .circle-holder .circle{
+//             background-color: $color-white;
+//             width: 7rem;
+//             height: 7rem;
+//             border-radius: $border-radius-rounded;
+//             border: 3px dashed $color-theme;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: center;
+//             margin: 1rem;
+//         }
+//         .flash-sale .circle-holder h1{
+//             display: block;
+//             font-family: $font-play;
+//             font-weight: $font-weight-bold;
+//             color: $color-theme;
+//             margin: 0;
+//             padding: 0;
+//         }
+//         .flash-sale .circle-holder p{
+//             display: block;
+//             margin: 0;
+//             padding: 0;
+//         }
 
 /*-----------------------------TOP-SELLERS-------------------------------*/
 .top-sellers .container{
@@ -1100,30 +1100,30 @@ footer .footer-copyright .container{
     //     display: block;
     // }
 
-    /* flash-sale */
-    .flash-sale .container{
-        background-color: $color-theme-lighter-dark;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-        .flash-sale .container .banner-holder{
-            display: flex;
-            align-items: flex-start;
-            height: auto !important;
-            margin-bottom: 0.7rem;
-        }
-        .flash-sale .container .banner-holder .flash-sale-banner{
-            padding: 1rem 2rem;
-        }
-            .flash-sale .container .banner-holder .flash-sale-banner button{
-                display: none;
-            }
-        .flash-sale .flash-sale-right{
-            display: flex !important;
-        }
-            .flash-sale .flash-sale-right button{
-                margin-top: 0;
-            }
+    // /* flash-sale */
+    // .flash-sale .container{
+    //     background-color: $color-theme-lighter-dark;
+    //     flex-direction: column;
+    //     justify-content: flex-start;
+    // }
+    //     .flash-sale .container .banner-holder{
+    //         display: flex;
+    //         align-items: flex-start;
+    //         height: auto !important;
+    //         margin-bottom: 0.7rem;
+    //     }
+    //     .flash-sale .container .banner-holder .flash-sale-banner{
+    //         padding: 1rem 2rem;
+    //     }
+    //         .flash-sale .container .banner-holder .flash-sale-banner button{
+    //             display: none;
+    //         }
+    //     .flash-sale .flash-sale-right{
+    //         display: flex !important;
+    //     }
+    //         .flash-sale .flash-sale-right button{
+    //             margin-top: 0;
+    //         }
     
     /* top-sellers */
     div[id^="top-sellers-card-"]{
@@ -1671,31 +1671,31 @@ footer .footer-copyright .container{
     //     display: none;
     // }
 
-    /* flash-sale */
-    .flash-sale .container{
-        justify-content: space-between;
-        flex-direction: row;
-    }
-    .flash-sale .container .banner-holder{
-        align-items: flex-start;
-        height: 100% !important;
-        margin-bottom: 0;
-    }
-        .flash-sale .container .banner-holder .flash-sale-banner button{
-            display: none;
-        }
-    .flash-sale .container .flash-sale-banner{
-        padding: 2.5rem 2rem;
-    }
-    .flash-sale .flash-sale-right button{
-            margin-top: 1rem;
-    }
-    .flash-sale .circle-holder .circle:last-child{
-        margin-right: 0rem;
-    }
-    .flash-sale .flash-sale-right{
-        display: flex !important;
-    }
+    // /* flash-sale */
+    // .flash-sale .container{
+    //     justify-content: space-between;
+    //     flex-direction: row;
+    // }
+    // .flash-sale .container .banner-holder{
+    //     align-items: flex-start;
+    //     height: 100% !important;
+    //     margin-bottom: 0;
+    // }
+    //     .flash-sale .container .banner-holder .flash-sale-banner button{
+    //         display: none;
+    //     }
+    // .flash-sale .container .flash-sale-banner{
+    //     padding: 2.5rem 2rem;
+    // }
+    // .flash-sale .flash-sale-right button{
+    //         margin-top: 1rem;
+    // }
+    // .flash-sale .circle-holder .circle:last-child{
+    //     margin-right: 0rem;
+    // }
+    // .flash-sale .flash-sale-right{
+    //     display: flex !important;
+    // }
 
     /* top-sellers */
     div[id^="top-sellers-card-"]{
