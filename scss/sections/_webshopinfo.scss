@@ -1,0 +1,111 @@
+.webshop-info{
+    display: none;
+
+    @include sm {
+        display: block;
+    }
+    @include xl{
+        padding: 2rem 0;
+    }
+    @include xxl{
+        padding: 4rem 0;
+    }
+
+    .container{
+        max-width: 1600px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .info-box{
+        margin: 0.5rem;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        background-color: $color-theme-light;
+        border-radius: $border-radius-small;
+        transition: 0.2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        @include sm {
+            margin: 1rem;
+            padding: 1rem;
+            min-height: 140px;
+            min-width: 100px;
+            max-width: 120px;
+        }
+        @include md {
+            max-width: none;
+            width: 10rem;
+            min-height: 120px;
+        }
+        @include xl{
+            flex-direction: row;
+            text-align: left;
+            margin: 0 1rem;
+            min-height: 100px;
+            width: 220px;
+        }
+        @include xxl{
+            padding: 1.5rem;
+            width: auto;
+        }
+
+        &:hover{
+            background-color: $color-theme;
+            color: $color-white;
+
+            img{
+                filter: brightness(1000%);
+            }
+
+            h1{
+                color: $color-white;
+            }
+        }
+
+        img{
+            width: 2.5rem;
+            filter: brightness(100%);
+            transition: 0.2s ease-in-out;
+
+            @include sm{
+                width: auto;
+                margin-bottom: 0.5rem;
+            }
+            @include xl{
+                margin-right: 1.5rem;
+                margin-bottom: 0;
+            }
+        }
+
+        h1{
+            display: none;
+            transition: 0.25s ease-in-out;
+
+            @include sm {
+                display: block;
+                color: $color-theme;
+                font-size: 1rem;
+                font-weight: $font-weight-medium;
+                margin: 0;
+            }
+            @include xxl{
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        p{
+            display: none;
+
+            @include xxl{
+                display: block;
+                margin: 0;
+            }
+        }
+    
+    }
+}
