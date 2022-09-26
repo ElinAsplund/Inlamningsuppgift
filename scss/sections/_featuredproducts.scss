@@ -1,8 +1,12 @@
-.new-arrivals{    
+.featured-products{
     .section-title{
         padding-bottom: 0.75rem;
     }
-}
+
+    .card-holder{
+        margin-bottom: 10rem;
+    }
+} 
 
 // Please note that most of the styling of this section 
 // takes place in this file: /scss/components/_cards.scss.
