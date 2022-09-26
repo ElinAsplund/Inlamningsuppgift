@@ -36,6 +36,10 @@
                     margin-bottom: 1rem;
                     font-weight: $font-weight-regular;
                     transition: 0.3s ease-in-out;
+
+                    @include md{
+                        font-size: 1.1rem;
+                    }
                 }
         
                 a{
