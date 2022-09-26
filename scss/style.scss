@@ -812,11 +812,13 @@ footer .container{
         font-weight: $font-weight-bold;
         font-size: $font-size-36;
         text-align: center;
+        margin-bottom: 1.5rem;
     }
         footer .footer-subscribe .subscribe-now h1 span{
             color: $color-theme;
         }
     footer .footer-subscribe .subscribe-now p{
+        display: none;
         margin-bottom: 1.5rem;
         text-align: center;
         width: 80%;
@@ -1155,6 +1157,14 @@ footer .footer-copyright .container{
     // }
 
     /* footer */
+    footer .footer-subscribe .subscribe-now p{
+        display: block;
+    }
+
+    footer .footer-subscribe .subscribe-now h1{
+        margin-bottom: 1rem;
+    }
+
     footer .footer-subscribe .subscribe-now #subscribeForm{
         height: 45px;
         margin: left;
