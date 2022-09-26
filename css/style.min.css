@@ -1357,19 +1357,35 @@ html, body {
   width: 100%;
   margin-top: 0rem;
 }
+@media (min-width: 1200px) {
+  .top-sellers .grid .card-column:last-child {
+    display: block;
+  }
+}
 
 #top-sellers-card-1:hover .card-body {
   height: 15%;
 }
 @media (min-width: 768px) {
   #top-sellers-card-1:hover .card-body {
-    height: 12.5rem;
+    height: 12rem;
+  }
+}
+@media (min-width: 1200px) {
+  #top-sellers-card-1:hover .card-body {
+    height: 13rem;
   }
 }
 @media (min-width: 768px) {
   #top-sellers-card-1:hover .card-body h1 {
     margin-top: 1rem;
     margin-bottom: 0rem;
+  }
+}
+@media (min-width: 1200px) {
+  #top-sellers-card-1:hover .card-body h1 {
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
   }
 }
 #top-sellers-card-1:hover .card-background {
@@ -1392,6 +1408,11 @@ html, body {
     top: 1.5rem;
   }
 }
+@media (min-width: 1200px) {
+  #top-sellers-card-1:hover .card-menu {
+    top: 2rem;
+  }
+}
 #top-sellers-card-1 .card-body {
   height: 2.7rem;
   transition: 0.2s ease-in-out;
@@ -1401,6 +1422,11 @@ html, body {
     padding: 2rem;
     height: 10%;
     transition: 0.5s ease-in-out;
+  }
+}
+@media (min-width: 1200px) {
+  #top-sellers-card-1 .card-body {
+    height: 4.35rem;
   }
 }
 #top-sellers-card-1 .card-body h1 {
@@ -1451,6 +1477,18 @@ html, body {
     transition: 0.4s ease-in-out;
   }
 }
+@media (min-width: 1200px) {
+  #top-sellers-card-2 .card .card-body,
+#top-sellers-card-3 .card .card-body {
+    height: 4.35rem;
+  }
+}
+@media (min-width: 1200px) {
+  #top-sellers-card-2 .card .card-body h1,
+#top-sellers-card-3 .card .card-body h1 {
+    margin-top: 1.3rem;
+  }
+}
 #top-sellers-card-2 .card:hover .card-body,
 #top-sellers-card-3 .card:hover .card-body {
   height: 32%;
@@ -1462,11 +1500,24 @@ html, body {
     padding: 2rem;
   }
 }
+@media (min-width: 1200px) {
+  #top-sellers-card-2 .card:hover .card-body,
+#top-sellers-card-3 .card:hover .card-body {
+    height: 13rem;
+  }
+}
 @media (min-width: 768px) {
   #top-sellers-card-2 .card:hover .card-body h1,
 #top-sellers-card-3 .card:hover .card-body h1 {
     margin-top: 1.6rem;
     margin-bottom: 0rem;
+  }
+}
+@media (min-width: 1200px) {
+  #top-sellers-card-2 .card:hover .card-body h1,
+#top-sellers-card-3 .card:hover .card-body h1 {
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
   }
 }
 #top-sellers-card-2 .card .card-menu,
@@ -1490,6 +1541,12 @@ html, body {
   #top-sellers-card-2 .card:hover .card-menu,
 #top-sellers-card-3 .card:hover .card-menu {
     top: 1.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  #top-sellers-card-2 .card:hover .card-menu,
+#top-sellers-card-3 .card:hover .card-menu {
+    top: 2rem;
   }
 }
 #top-sellers-card-2 .card .card-background,
@@ -1539,8 +1596,18 @@ div[id^=top-sellers-card-] {
     width: 456px;
   }
 }
+@media (min-width: 1200px) {
+  div[id^=top-sellers-card-] {
+    width: 546px;
+  }
+}
+@media (min-width: 1400px) {
+  div[id^=top-sellers-card-] {
+    width: 636px;
+  }
+}
 
-/* This is where I found reference how to select multiple elements (id)
+/* This is where I found a reference how to select multiple elements (id)
 https://stackoverflow.com/questions/36772973/selecting-multiple-elements-with-same-classname-using-css */
 /* Individual id-styling of the top-sellers-card-n in the grid */
 #top-sellers-card-1 {
@@ -1576,9 +1643,6 @@ https://stackoverflow.com/questions/36772973/selecting-multiple-elements-with-sa
   }
 }
 
-/* top-sellers */
-/* top-sellers: activating hovering-effects */
-/* top-sellers */
 /*----------------------------STANDARD VALUES----------------------------*/
 /* section-title */
 /* cards */
@@ -1941,13 +2005,4 @@ footer .footer-copyright p {
   }
 }
 /* ---------------------------1200px--------------------------- */
-@media (min-width: 1200px) {
-  /* main-menu */
-  /* webshop-info */
-  /* shop-by-category */
-}
 /* ---------------------------1400px--------------------------- */
-@media (min-width: 1400px) {
-  /* main-menu */
-  /* shop-by-category */
-}

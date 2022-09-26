@@ -20,23 +20,36 @@
             height: 100%;
             width: 100%;
             margin-top: 0rem;
+
+            &:last-child{
+                @include xl{
+                    display: block;
+                }
+            }    
         }
     }
 } 
 
-
+// Styling for #top-sellers-card-1
 #top-sellers-card-1{
     &:hover{
         .card-body{
             height: 15%;
 
             @include md{
-                height: 12.5rem;
+                height: 12rem;
+            }
+            @include xl{
+                height: 13rem;
             }
             h1{
                 @include md{
                     margin-top: 1rem;
                     margin-bottom: 0rem;
+                }
+                @include xl{
+                    margin-top: 1rem;
+                    margin-bottom: 0.4rem;
                 }
             }
         }
@@ -56,6 +69,9 @@
             @include lg{
                 top: 1.5rem;
             }
+            @include xl{
+                top: 2rem;
+            }
         }
     } 
 
@@ -67,6 +83,9 @@
             padding: 2rem;
             height: 10%;
             transition: 0.5s ease-in-out;
+        }
+        @include xl{
+            height: 4.35rem;
         }
 
         h1{
@@ -106,7 +125,7 @@
 
 } 
 
-
+// Styling for #top-sellers-card-2 and #top-sellers-card-3
 #top-sellers-card-2,
 #top-sellers-card-3{
     .card{
@@ -120,6 +139,15 @@
                 padding: 0.7rem 2rem;
                 transition: 0.4s ease-in-out;    
             }
+            @include xl{
+                height: 4.35rem;
+            }
+
+            h1{
+                @include xl{
+                    margin-top: 1.3rem;
+                }
+            }
         }
         &:hover .card-body{
             height: 32%;
@@ -128,10 +156,17 @@
                 height: 12.5rem;
                 padding: 2rem;
             }
+            @include xl{
+                height: 13rem;
+            }
             h1{
                 @include md{
                     margin-top: 1.6rem;
                     margin-bottom: 0rem;
+                }
+                @include xl{
+                    margin-top: 1rem;
+                    margin-bottom: 0.4rem;
                 }
             }
         }
@@ -151,6 +186,9 @@
         &:hover .card-menu{
             @include lg{
                 top: 1.3rem;
+            }
+            @include xl{
+                top: 2rem;
             }
         }
         
@@ -190,8 +228,14 @@ div[id^="top-sellers-card-"]{
     @include lg{
         width: 456px;
     }
+    @include xl{
+        width: 546px;
+    }
+    @include xxl{
+        width: 636px;
+    }
 }
-/* This is where I found reference how to select multiple elements (id)
+/* This is where I found a reference how to select multiple elements (id)
 https://stackoverflow.com/questions/36772973/selecting-multiple-elements-with-same-classname-using-css */
 
 
@@ -223,137 +267,3 @@ https://stackoverflow.com/questions/36772973/selecting-multiple-elements-with-sa
         grid-row: 2/-1;
     }
 }
-
-
-
-
-// // md
-    /* top-sellers */
-    // div[id^="top-sellers-card-"]{
-    //     width: 336px;
-    // }
-        // div[id^="top-sellers-card-"] .card .card-menu{
-        //     right: 2rem;
-        //     transition:0.4s ease-in-out;
-        // }
-        // div[id^="top-sellers-card-"] .card .card-body{
-        //     padding: 2rem;
-        //     transition: 0.4s ease-in-out;
-        // }
-        // div[id^="top-sellers-card-"] .card .card-background{
-        //     height: 19%;
-        //     transition: 0.4s ease-in-out;
-        // }
-
-    // #top-sellers-card-1 img{
-    //     padding-top: 2.5rem;
-    // }
-    // #top-sellers-card-1 .card-body{
-    //     transition: 0.5s ease-in-out;
-    // }
-    // #top-sellers-card-1 .card-background{
-    //     transition: 0.5s ease-in-out;
-    // }
-    // #top-sellers-card-1 .card .card-menu{
-    //     transition: 0.4s ease-in-out;
-    // }
-
-    /* top-sellers: activating hovering-effects */
-    // #top-sellers-card-1:hover .card-body{
-    //     height: 11rem;
-    // }
-    // #top-sellers-card-1:hover .card-background{
-    //     height: 100%;
-    // }
-    // #top-sellers-card-1:hover .card-menu{
-    //     display: block;
-    //     top: 1.5rem;
-    // }
-
-    // .top-sellers .card:hover .card-body h1{
-    //     margin-bottom: 0rem;
-    // }
-    // .top-sellers .card .card-menu li a:hover{
-    //     color: $color-theme;
-    // }
-
-    // div[id^="top-sellers-card-"] .card:hover .card-menu{
-    //     display: none;
-    // }
-    // div[id^="top-sellers-card-"] .card:hover .card-body{
-    //     height: 11rem;
-    // }
-    // div[id^="top-sellers-card-"] .card:hover .card-background{
-    //     height: 100%;
-    // }
-
-
-
-
-
-
-
-// // lg
-    /* top-sellers */
-    // div[id^="top-sellers-card-"]{
-    //     width: 456px;
-    // }
-    // #top-sellers-card-1 .card-background{
-    //     height: 7.5%;
-    // }
-    // div[id^="top-sellers-card-"] .card .card-background{
-    //     height: 15%;
-    // }
-    // div[id^="top-sellers-card-"] .card:hover .card-menu{
-    //     display: block;
-    //     top: 1rem;
-    // }
-        // #top-sellers-card-1 .card:hover .card-menu{
-        //     top: 2rem;
-        // }
-
-
-
-
-
-
-// // xl
-//     /* top-sellers */
-//     div[id^="top-sellers-card-"]{
-//         width: 546px;
-//     }
-//     div[id^="top-sellers-card-"] .card .card-body{
-//         height: 4.35rem;
-//     }
-//     div[id^="top-sellers-card-"] .card:hover .card-menu{
-//         top: 2rem;
-//     }
-//         #top-sellers-card-1 .card .card-body{
-//             height: 4.35rem;
-//         }
-//             #top-sellers-card-1 .card:hover .card-body{
-//                 height: 11rem;
-//             }
-
-// // xxl
-
-//     /* top-sellers */
-//     div[id^="top-sellers-card-"]{
-//         width: 636px;
-//     }
-//     div[id^="top-sellers-card-"] .card .card-body{
-//         height: 4.5rem;
-//     }
-//         #top-sellers-card-1 .card .card-body{
-//             height: 4.5rem;
-//         }
-//     .top-sellers .card-holder{
-//         justify-content: space-between;
-//     }
-//     .top-sellers .card-column:last-child{
-//         display: block;
-//     }
-//     div[id^="top-sellers-card-"] .card:hover .card-menu{
-//         top: 2rem;
-//     }
-
