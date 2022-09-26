@@ -391,6 +391,7 @@
         //     display: none;
         // }
 
+
 /*--------------------------------SHOWCASE-------------------------------*/
 .showcase{
     background-color: $color-grey-4;
@@ -996,17 +997,17 @@ footer .footer-copyright .container{
 /* --------------------------576px----------------------------- */
 @media (min-width: 576px) { 
     /* top-menu */
-    .top-menu .menu-links {
-        display: block;
-        padding: 0.8rem 0;
-        display: flex;
-    }   
-    .top-menu .top-menu-right .menu-links{
-        display: block;
-    }
-        .top-menu .top-menu-right .menu-links a:last-child{
-            margin-right: 0;
-        }
+    // .top-menu .menu-links {
+    //     display: block;
+    //     padding: 0.8rem 0;
+    //     display: flex;
+    // }   
+    // .top-menu .top-menu-right .menu-links{
+    //     display: block;
+    // }
+    //     .top-menu .top-menu-right .menu-links a:last-child{
+    //         margin-right: 0;
+    //     }
 
     /* main-menu */
     .main-menu .brand{
@@ -1335,7 +1336,7 @@ footer .footer-copyright .container{
         .new-arrivals .card:hover .card-background{
             height: 100%;
         }
-    
+        
     /* featured-products */
     .featured-products .card-column{
         height: 350px;
