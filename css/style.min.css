@@ -1643,6 +1643,144 @@ https://stackoverflow.com/questions/36772973/selecting-multiple-elements-with-sa
   }
 }
 
+footer .footer-subscribe {
+  background-color: #F6F6F6;
+}
+footer .footer-subscribe .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 23rem;
+}
+@media (min-width: 992px) {
+  footer .footer-subscribe .container {
+    justify-content: space-between;
+  }
+}
+footer .footer-subscribe .subscribe-now {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  footer .footer-subscribe .subscribe-now {
+    align-items: flex-start;
+  }
+}
+footer .footer-subscribe .subscribe-now h1 {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 576px) {
+  footer .footer-subscribe .subscribe-now h1 {
+    margin-bottom: 1rem;
+  }
+}
+footer .footer-subscribe .subscribe-now h1 span {
+  color: #20D3C2;
+}
+footer .footer-subscribe .subscribe-now p {
+  display: none;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  width: 80%;
+}
+@media (min-width: 576px) {
+  footer .footer-subscribe .subscribe-now p {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  footer .footer-subscribe .subscribe-now p {
+    width: 70%;
+    text-align: left;
+  }
+}
+footer .footer-subscribe .subscribe-now #subscribeForm {
+  width: 80%;
+  border-radius: 25px;
+  height: 100px;
+  margin: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 576px) {
+  footer .footer-subscribe .subscribe-now #subscribeForm {
+    height: 45px;
+    margin: left;
+    position: relative;
+  }
+}
+footer .footer-subscribe .subscribe-now #subscribeForm input {
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: 1px #E3E3E3 solid;
+  font-size: 0.9rem;
+  padding-left: 1.3rem;
+  margin-bottom: 10px;
+}
+@media (min-width: 576px) {
+  footer .footer-subscribe .subscribe-now #subscribeForm input {
+    position: absolute;
+    padding-left: 1.3rem;
+    margin-bottom: 0;
+  }
+}
+footer .footer-subscribe .subscribe-now #subscribeForm button {
+  height: 80%;
+  width: 150px;
+  background-color: #20D3C2;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 25px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: 0.2s ease-in-out;
+}
+@media (min-width: 576px) {
+  footer .footer-subscribe .subscribe-now #subscribeForm button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+}
+footer .footer-subscribe .subscribe-now #subscribeForm button:hover {
+  background-color: #0E153D;
+}
+footer .footer-subscribe .blank-placeholder {
+  display: none;
+  background-color: #CCCCCC;
+  width: 47%;
+  height: 100%;
+}
+@media (min-width: 992px) {
+  footer .footer-subscribe .blank-placeholder {
+    display: block;
+  }
+}
+footer .footer-copyright {
+  background-color: #080C24;
+}
+footer .footer-copyright .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #080C24;
+  color: #FFFFFF;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+footer .footer-copyright .container p {
+  margin: 0;
+}
+
 /*----------------------------STANDARD VALUES----------------------------*/
 /* section-title */
 /* cards */
@@ -1666,107 +1804,6 @@ https://stackoverflow.com/questions/36772973/selecting-multiple-elements-with-sa
 /*----------------------------NEW-ARRIVALS-------------------------------*/
 /*--------------------------FEATURED-PRODUCTS----------------------------*/
 /*-----------------------------TOP-SELLERS-------------------------------*/
-/*-------------------------------FOOTER----------------------------------*/
-/*---------------footer > .footer-subscribe---------------------*/
-footer .footer-subscribe {
-  background-color: #F6F6F6;
-}
-
-footer .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .footer-subscribe .subscribe-now {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .footer-subscribe .subscribe-now h1 {
-  font-family: "Play", sans-serif;
-  font-weight: 700;
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-footer .footer-subscribe .subscribe-now h1 span {
-  color: #20D3C2;
-}
-
-footer .footer-subscribe .subscribe-now p {
-  display: none;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  width: 80%;
-}
-
-footer .footer-subscribe .subscribe-now #subscribeForm {
-  width: 80%;
-  border-radius: 25px;
-  height: 100px;
-  margin: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-footer .footer-subscribe .subscribe-now #subscribeForm input {
-  border-radius: 25px;
-  height: 100%;
-  width: 100%;
-  outline: none;
-  border: 1px #E3E3E3 solid;
-  font-size: 0.9rem;
-  padding-left: 1.3rem;
-  margin-bottom: 10px;
-}
-
-footer .footer-subscribe .subscribe-now #subscribeForm button {
-  height: 80%;
-  width: 150px;
-  background-color: #20D3C2;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 25px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  transition: 0.2s ease-in-out;
-}
-
-footer .footer-subscribe .subscribe-now #subscribeForm button:hover {
-  background-color: #0E153D;
-}
-
-footer .footer-subscribe .blank-placeholder {
-  display: none;
-  background-color: #CCCCCC;
-  width: 47%;
-  height: 100%;
-}
-
-/*---------------footer > .footer-copyright---------------------*/
-footer .footer-copyright {
-  background-color: #080C24;
-}
-
-footer .footer-copyright .container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: #080C24;
-  color: #FFFFFF;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-footer .footer-copyright p {
-  margin: 0;
-}
-
 /*---------------------------MY-ACCOUNT-PAGE-----------------------------*/
 /*------------------------------BREADCRUMB-------------------------------*/
 .breadcrumb {
@@ -1908,28 +1945,6 @@ footer .footer-copyright p {
   /* showcase */
   /* webshop-info */
   /* show .section-title's p */
-  /* footer */
-  footer .footer-subscribe .subscribe-now p {
-    display: block;
-  }
-  footer .footer-subscribe .subscribe-now h1 {
-    margin-bottom: 1rem;
-  }
-  footer .footer-subscribe .subscribe-now #subscribeForm {
-    height: 45px;
-    margin: left;
-    position: relative;
-  }
-  footer .footer-subscribe .subscribe-now #subscribeForm input {
-    position: absolute;
-    padding-left: 1.3rem;
-    margin-bottom: 0;
-  }
-  footer .footer-subscribe .subscribe-now #subscribeForm button {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-  }
   /* breadcrumb */
   .breadcrumb .container {
     flex-direction: row;
@@ -1979,20 +1994,6 @@ footer .footer-copyright p {
   /* main-menu nav */
   /* showcase */
   /* shop-by-category */
-  /* footer */
-  footer .container {
-    justify-content: space-between;
-  }
-  footer .footer-subscribe .subscribe-now {
-    align-items: flex-start;
-  }
-  footer .footer-subscribe .subscribe-now p {
-    width: 70%;
-    text-align: left;
-  }
-  footer .footer-subscribe .blank-placeholder {
-    display: block;
-  }
   /* signup-signin */
   .signup-signin .container {
     display: grid;
