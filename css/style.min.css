@@ -1363,6 +1363,30 @@ html, body {
   }
 }
 
+#top-sellers-card-1 .card-body {
+  height: 2.7rem;
+  transition: 0.2s ease-in-out;
+}
+@media (min-width: 768px) {
+  #top-sellers-card-1 .card-body {
+    padding: 2rem;
+    height: 10%;
+    transition: 0.5s ease-in-out;
+  }
+}
+@media (min-width: 1200px) {
+  #top-sellers-card-1 .card-body {
+    height: 4.35rem;
+  }
+}
+@media (min-width: 1400px) {
+  #top-sellers-card-1 .card-body {
+    height: 4.6rem;
+  }
+}
+#top-sellers-card-1 .card-body h1 {
+  margin-bottom: 1rem;
+}
 #top-sellers-card-1:hover .card-body {
   height: 15%;
 }
@@ -1388,13 +1412,21 @@ html, body {
     margin-bottom: 0.4rem;
   }
 }
-#top-sellers-card-1:hover .card-background {
-  height: 17%;
+#top-sellers-card-1 img {
+  padding-top: 1.5rem;
 }
 @media (min-width: 768px) {
-  #top-sellers-card-1:hover .card-background {
-    height: 100%;
+  #top-sellers-card-1 img {
+    padding-top: 2.5rem;
   }
+}
+@media (min-width: 768px) {
+  #top-sellers-card-1 .card-menu {
+    transition: 0.4s ease-in-out;
+  }
+}
+#top-sellers-card-1 .card-menu li img {
+  top: -40px;
 }
 @media (min-width: 768px) {
   #top-sellers-card-1:hover .card-menu {
@@ -1413,41 +1445,6 @@ html, body {
     top: 2rem;
   }
 }
-#top-sellers-card-1 .card-body {
-  height: 2.7rem;
-  transition: 0.2s ease-in-out;
-}
-@media (min-width: 768px) {
-  #top-sellers-card-1 .card-body {
-    padding: 2rem;
-    height: 10%;
-    transition: 0.5s ease-in-out;
-  }
-}
-@media (min-width: 1200px) {
-  #top-sellers-card-1 .card-body {
-    height: 4.35rem;
-  }
-}
-#top-sellers-card-1 .card-body h1 {
-  margin-bottom: 1rem;
-}
-#top-sellers-card-1 img {
-  padding-top: 1.5rem;
-}
-@media (min-width: 768px) {
-  #top-sellers-card-1 img {
-    padding-top: 2.5rem;
-  }
-}
-@media (min-width: 768px) {
-  #top-sellers-card-1 .card-menu {
-    transition: 0.4s ease-in-out;
-  }
-}
-#top-sellers-card-1 .card-menu li img {
-  top: -40px;
-}
 #top-sellers-card-1 .card-background {
   height: 12%;
   transition: 0.2s ease-in-out;
@@ -1461,6 +1458,14 @@ html, body {
 @media (min-width: 992px) {
   #top-sellers-card-1 .card-background {
     height: 7.5%;
+  }
+}
+#top-sellers-card-1:hover .card-background {
+  height: 17%;
+}
+@media (min-width: 768px) {
+  #top-sellers-card-1:hover .card-background {
+    height: 100%;
   }
 }
 
@@ -1481,6 +1486,12 @@ html, body {
   #top-sellers-card-2 .card .card-body,
 #top-sellers-card-3 .card .card-body {
     height: 4.35rem;
+  }
+}
+@media (min-width: 1400px) {
+  #top-sellers-card-2 .card .card-body,
+#top-sellers-card-3 .card .card-body {
+    height: 4.6rem;
   }
 }
 @media (min-width: 1200px) {
