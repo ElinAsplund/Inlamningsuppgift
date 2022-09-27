@@ -1,0 +1,55 @@
+.breadcrumb{
+    background-color: $color-theme-lighter-dark;
+    margin: 0;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 7rem;
+
+        @include sm{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;    
+        }
+    }
+
+    h1{
+        display: block;
+        color: $color-theme;
+        font-size: 1.5rem;
+        font-weight: $font-weight-regular;
+        margin: 0;
+        margin-bottom: 0.3rem;
+        margin-left: 16px;
+
+        @include sm{
+            margin: 0;
+        }
+    }
+
+    ol{
+        margin: 0;
+    }
+
+    a{
+        color: $color-theme;
+        text-decoration: none;
+        margin-left: 16px;
+
+        &:hover{
+            color: $color-white;
+            text-decoration: underline;
+        }
+    }
+
+    .breadcrumb-item{
+        color: $color-white;
+
+        &::before{
+            color: $color-white;
+            margin: 0 0.5rem;
+        }
+    }
+}

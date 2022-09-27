@@ -1792,6 +1792,57 @@ footer .footer-copyright .container p {
   margin: 0;
 }
 
+.breadcrumb {
+  background-color: #292F51;
+  margin: 0;
+}
+.breadcrumb .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 7rem;
+}
+@media (min-width: 576px) {
+  .breadcrumb .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.breadcrumb h1 {
+  display: block;
+  color: #20D3C2;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 0.3rem;
+  margin-left: 16px;
+}
+@media (min-width: 576px) {
+  .breadcrumb h1 {
+    margin: 0;
+  }
+}
+.breadcrumb ol {
+  margin: 0;
+}
+.breadcrumb a {
+  color: #20D3C2;
+  text-decoration: none;
+  margin-left: 16px;
+}
+.breadcrumb a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+.breadcrumb .breadcrumb-item {
+  color: #FFFFFF;
+}
+.breadcrumb .breadcrumb-item::before {
+  color: #FFFFFF;
+  margin: 0 0.5rem;
+}
+
 /*----------------------------STANDARD VALUES----------------------------*/
 /* section-title */
 /* cards */
@@ -1816,53 +1867,6 @@ footer .footer-copyright .container p {
 /*--------------------------FEATURED-PRODUCTS----------------------------*/
 /*-----------------------------TOP-SELLERS-------------------------------*/
 /*---------------------------MY-ACCOUNT-PAGE-----------------------------*/
-/*------------------------------BREADCRUMB-------------------------------*/
-.breadcrumb {
-  background-color: #292F51;
-  margin: 0;
-}
-
-.breadcrumb .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 7rem;
-}
-
-.breadcrumb h1 {
-  display: block;
-  color: #20D3C2;
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin: 0;
-  margin-bottom: 0.3rem;
-  margin-left: 16px;
-}
-
-.breadcrumb ol {
-  margin: 0;
-}
-
-.breadcrumb a {
-  color: #20D3C2;
-  text-decoration: none;
-  margin-left: 16px;
-}
-
-.breadcrumb a:hover {
-  color: #FFFFFF;
-  text-decoration: underline;
-}
-
-.breadcrumb .breadcrumb-item {
-  color: #FFFFFF;
-}
-
-.breadcrumb .breadcrumb-item::before {
-  color: #FFFFFF;
-  margin: 0 0.5rem;
-}
-
 /*----------------------------SIGNUP-SIGNIN------------------------------*/
 .signup-signin .container {
   padding-top: 3rem;
@@ -1956,15 +1960,6 @@ footer .footer-copyright .container p {
   /* showcase */
   /* webshop-info */
   /* show .section-title's p */
-  /* breadcrumb */
-  .breadcrumb .container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .breadcrumb h1 {
-    margin: 0;
-  }
   /* signup-signin */
   .signup-signin .container {
     margin: auto;

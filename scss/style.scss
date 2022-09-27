@@ -882,45 +882,45 @@
 //     }
     
 /*---------------------------MY-ACCOUNT-PAGE-----------------------------*/
-/*------------------------------BREADCRUMB-------------------------------*/
-.breadcrumb{
-    background-color: $color-theme-lighter-dark;
-    margin: 0;
-}
-.breadcrumb .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 7rem;
-}
-    .breadcrumb h1{
-        display: block;
-        color: $color-theme;
-        font-size: 1.5rem;
-        font-weight: $font-weight-regular;
-        margin: 0;
-        margin-bottom: 0.3rem;
-        margin-left: 16px;
-    }
-    .breadcrumb ol{
-        margin: 0;
-    }
-    .breadcrumb a{
-        color: $color-theme;
-        text-decoration: none;
-        margin-left: 16px;
-    }
-        .breadcrumb a:hover{
-            color: $color-white;
-            text-decoration: underline;
-        }
-    .breadcrumb .breadcrumb-item{
-        color: $color-white;
-    }
-        .breadcrumb .breadcrumb-item::before{
-            color: $color-white;
-            margin: 0 0.5rem;
-        }
+// /*------------------------------BREADCRUMB-------------------------------*/
+// .breadcrumb{
+//     background-color: $color-theme-lighter-dark;
+//     margin: 0;
+// }
+// .breadcrumb .container{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     height: 7rem;
+// }
+//     .breadcrumb h1{
+//         display: block;
+//         color: $color-theme;
+//         font-size: 1.5rem;
+//         font-weight: $font-weight-regular;
+//         margin: 0;
+//         margin-bottom: 0.3rem;
+//         margin-left: 16px;
+//     }
+//     .breadcrumb ol{
+//         margin: 0;
+//     }
+//     .breadcrumb a{
+//         color: $color-theme;
+//         text-decoration: none;
+//         margin-left: 16px;
+//     }
+//         .breadcrumb a:hover{
+//             color: $color-white;
+//             text-decoration: underline;
+//         }
+//     .breadcrumb .breadcrumb-item{
+//         color: $color-white;
+//     }
+//         .breadcrumb .breadcrumb-item::before{
+//             color: $color-white;
+//             margin: 0 0.5rem;
+//         }
 
 /*----------------------------SIGNUP-SIGNIN------------------------------*/
 .signup-signin .container{
@@ -1181,15 +1181,15 @@
     //         right: 5px;
     //     }
     
-    /* breadcrumb */
-    .breadcrumb .container{
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-        .breadcrumb h1{
-            margin: 0;
-        }
+    // /* breadcrumb */
+    // .breadcrumb .container{
+    //     flex-direction: row;
+    //     justify-content: space-between;
+    //     align-items: center;
+    // }
+    //     .breadcrumb h1{
+    //         margin: 0;
+    //     }
 
     /* signup-signin */
     .signup-signin .container{
