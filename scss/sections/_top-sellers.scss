@@ -127,7 +127,7 @@
     }
 } 
 
-// Id-styling for #top-sellers-card-2 and #top-sellers-card-3 together
+// Id-styling for both #top-sellers-card-2 and #top-sellers-card-3
 #top-sellers-card-2,
 #top-sellers-card-3{
     .card{
@@ -242,7 +242,7 @@ div[id^="top-sellers-card-"]{
         width: 636px;
     }
 }
-/* This is where I found a reference on how to select multiple elements (id's)
+/* This is the reference I used on how to select multiple elements (id's)
 https://stackoverflow.com/questions/36772973/selecting-multiple-elements-with-same-classname-using-css */
 
 
