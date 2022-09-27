@@ -4,6 +4,8 @@
         justify-content: center;
     }
 
+    // Here I have hardcoded the grid conditions on every breakpoint step.
+    // Might not be optimal, but it's a solution!
     .grid {
         display: grid;
         gap: 0.8rem;
@@ -73,7 +75,7 @@
 } 
 
 
-/* Individual id-styling of the category-boxes-n in the grid*/
+/* Individual styling by id's of the category-boxes-n */
     #category-box-1{
         grid-column: 1/2;
         grid-row: 1/2;

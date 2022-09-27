@@ -10,6 +10,9 @@
         padding-bottom: 1.8rem;
     }
 
+    // Here I have hardcoded the flex "ratio" on every breakpoint step for 
+    // the classes .brand .search and menu-links-right.
+    // Might not be optimal, but it's a solution!
     .brand{
         @include sm{
             flex: 1;

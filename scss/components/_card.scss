@@ -1,3 +1,8 @@
+// Here is the styling bases of the cards, it's "structural-skeleton" and making it responsive. 
+// It seems to me, very dependent of hardcoded values and I'm not sure if it was a good idea 
+// to add the card-holder class and the responsive part here. 
+// This is something you might improve, if you had oceans of time.
+
 .card-holder{
     display: flex;
     justify-content: center;

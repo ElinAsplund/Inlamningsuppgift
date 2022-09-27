@@ -29,6 +29,10 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        // note: I have styled the info-boxes with <sm (mobile-first) in mind,
+        // but later I decided didn't like the look of them in <sm. 
+        // I removed the whole webshop-info section in <sm, with display: none;.
+        // Hence the code is still here, but not shown on the page.
 
         @include sm {
             margin: 1rem;
@@ -106,6 +110,5 @@
                 margin: 0;
             }
         }
-    
     }
 }

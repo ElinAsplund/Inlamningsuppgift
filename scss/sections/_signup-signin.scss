@@ -26,9 +26,11 @@
     .form-theme{
         @include md{
             width: 516px;
+            // a fixed width-size where more good-looking at this breakpoint.
         }
         @include lg{
             width: 100%;
+            // now 100% looks ok again.
         }
     }
 

@@ -24,13 +24,15 @@
             &:last-child{
                 @include xl{
                     display: block;
+                    // note: the card-column:last-child is switched to display: none; in the _card.scss at breakpoint xl.
+                    // Here I switch it back on again. 
                 }
             }    
         }
     }
 } 
 
-// Styling for #top-sellers-card-1
+// Individual id-styling for #top-sellers-card-1
 #top-sellers-card-1{
 
     .card-body{
@@ -125,7 +127,7 @@
     }
 } 
 
-// Styling for #top-sellers-card-2 and #top-sellers-card-3
+// Id-styling for #top-sellers-card-2 and #top-sellers-card-3 together
 #top-sellers-card-2,
 #top-sellers-card-3{
     .card{
@@ -219,6 +221,8 @@
     } 
 }
 
+// Here I have hardcoded the width on every breakpoint step.
+// Might not be optimal, but it's a solution!
 div[id^="top-sellers-card-"]{
     width: 231px;
     
@@ -238,7 +242,7 @@ div[id^="top-sellers-card-"]{
         width: 636px;
     }
 }
-/* This is where I found a reference how to select multiple elements (id)
+/* This is where I found a reference on how to select multiple elements (id's)
 https://stackoverflow.com/questions/36772973/selecting-multiple-elements-with-same-classname-using-css */
 
 
