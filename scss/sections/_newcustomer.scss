@@ -65,14 +65,8 @@
             color: $color-white;
         }
         
-        button{
-            background-color: $color-theme-dark;
+        .btn-bg-darkblue{
             width: max-content;
-
-            &:hover{
-                background-color: $color-white;
-                color: $color-theme;
-            }
         }
     } 
     
@@ -94,16 +88,9 @@
 
         button{
             display: none;
-            background-color: $color-white;
-            color: $color-theme;
 
             @include lg{
                 display: block;
-            }
-
-            &:hover{
-                background-color: $color-theme-dark;
-                color: $color-white;
             }
         }
     }
