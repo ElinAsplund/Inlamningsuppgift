@@ -922,77 +922,77 @@
 //             margin: 0 0.5rem;
 //         }
 
-/*----------------------------SIGNUP-SIGNIN------------------------------*/
-.signup-signin .container{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    margin: 0;
-    width: 100%;
-}
-#signinForm a{
-    color: $color-theme;
-    text-decoration: none;
-    transition: 0.2s ease-in-out;
-}
-    #signinForm a:hover{
-        color: $color-theme-dark;
-        text-decoration: underline;
-    }
-.signup-signin .login-form{
-    margin-bottom: 4rem;
-}
-    .signup-signin .login-form .grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-        .signup-signin .login-form .grid p{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: $font-weight-medium;
-            margin: 0;
-            padding: 0 1rem;
-        }
-        .signup-signin .login-form .button-holder{
-            display: flex;
-            flex-direction: column;
-        }
-        .signup-signin .login-form .button-holder button{
-            color: $color-white;
-            width: 100%;
-            border: none;
-            border-radius: $border-radius-small;
-            transition: 0.2s ease-in-out;
-        }
-            .signup-signin .login-form .button-holder button:hover{
-                background-color: $color-theme-dark;
-            }
-        .signup-signin .login-form .facebook-btn{
-            position: relative;
-            background-color: #3B5998;
-            margin-bottom: 0.5rem;
-        }
-        .signup-signin .login-form .google-btn{
-            position: relative;
-            background-color: #4285F4;
-        }
-            .signup-signin .login-form .facebook-btn img,
-            .signup-signin .login-form .google-btn img{
-                position: absolute;
-                top: center;
-                left: 1rem;
-            }
+// /*----------------------------SIGNUP-SIGNIN------------------------------*/
+// .signup-signin .container{
+//     padding-top: 3rem;
+//     padding-bottom: 3rem;
+//     margin: 0;
+//     width: 100%;
+// }
+// #signinForm a{
+//     color: $color-theme;
+//     text-decoration: none;
+//     transition: 0.2s ease-in-out;
+// }
+//     #signinForm a:hover{
+//         color: $color-theme-dark;
+//         text-decoration: underline;
+//     }
+// .signup-signin .login-form{
+//     margin-bottom: 4rem;
+// }
+//     .signup-signin .login-form .grid{
+//         display: grid;
+//         grid-template-columns: 1fr 1fr 1fr;
+//     }
+//         .signup-signin .login-form .grid p{
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             font-weight: $font-weight-medium;
+//             margin: 0;
+//             padding: 0 1rem;
+//         }
+//         .signup-signin .login-form .button-holder{
+//             display: flex;
+//             flex-direction: column;
+//         }
+//         .signup-signin .login-form .button-holder button{
+//             color: $color-white;
+//             width: 100%;
+//             border: none;
+//             border-radius: $border-radius-small;
+//             transition: 0.2s ease-in-out;
+//         }
+//             .signup-signin .login-form .button-holder button:hover{
+//                 background-color: $color-theme-dark;
+//             }
+//         .signup-signin .login-form .facebook-btn{
+//             position: relative;
+//             background-color: #3B5998;
+//             margin-bottom: 0.5rem;
+//         }
+//         .signup-signin .login-form .google-btn{
+//             position: relative;
+//             background-color: #4285F4;
+//         }
+//             .signup-signin .login-form .facebook-btn img,
+//             .signup-signin .login-form .google-btn img{
+//                 position: absolute;
+//                 top: center;
+//                 left: 1rem;
+//             }
 
-#signupForm a{
-    color: $color-theme;
-    font-weight: $font-weight-medium;
-    text-decoration: none;
-    transition: 0.2s ease-in-out;
-}
-    #signupForm a:hover{
-        color: $color-theme-dark;
-        text-decoration: underline;
-    }
+// #signupForm a{
+//     color: $color-theme;
+//     font-weight: $font-weight-medium;
+//     text-decoration: none;
+//     transition: 0.2s ease-in-out;
+// }
+//     #signupForm a:hover{
+//         color: $color-theme-dark;
+//         text-decoration: underline;
+//     }
 
 
 /*------------------MEDIA QUERIES: RESPONSIVE DESIGN---------------------*/
@@ -1191,19 +1191,19 @@
     //         margin: 0;
     //     }
 
-    /* signup-signin */
-    .signup-signin .container{
-        margin: auto;
-    }
-    .signup-signin .login-form .card-body #signinForm .password-query{
-        flex-direction: row !important;
-    }
-    .signup-signin .login-form .button-holder{
-        flex-direction: row;
-    }
-    .signup-signin .login-form .facebook-btn{
-        margin-bottom: 0;
-    }
+    // /* signup-signin */
+    // .signup-signin .container{
+    //     margin: auto;
+    // }
+    // .signup-signin .login-form .card-body #signinForm .password-query{
+    //     flex-direction: row !important;
+    // }
+    // .signup-signin .login-form .button-holder{
+    //     flex-direction: row;
+    // }
+    // .signup-signin .login-form .facebook-btn{
+    //     margin-bottom: 0;
+    // }
 }
 
 /* --------------------------768px----------------------------- */
@@ -1433,15 +1433,15 @@
     //     height: 100%;
     // }
 
-    /* signup-signup */
-    .signup-signin .container{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .signup-signin .form-theme{
-        width: 516px;
-    }
+    // /* signup-signup */
+    // .signup-signin .container{
+    //     display: flex;
+    //     align-items: center;
+    //     flex-direction: column;
+    // }
+    // .signup-signin .form-theme{
+    //     width: 516px;
+    // }
 }
 
 /* ----------------------------992px--------------------------- */
@@ -1605,24 +1605,24 @@
     //         display: block;
     //     }
 
-    /* signup-signin */
-    .signup-signin .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        padding-top: 6rem;
-        padding-bottom: 6rem;
-        align-items: flex-start;
-    }
-    .signup-signin .form-theme{
-        width: 100%;
-    }
-    .signup-signin .login-form{
-        margin-bottom: 0;
-    }
-        .signup-signin .login-form .facebook-btn{
-            margin-bottom: 0;
-        }
+    // /* signup-signin */
+    // .signup-signin .container{
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
+    //     gap: 2rem;
+    //     padding-top: 6rem;
+    //     padding-bottom: 6rem;
+    //     align-items: flex-start;
+    // }
+    // .signup-signin .form-theme{
+    //     width: 100%;
+    // }
+    // .signup-signin .login-form{
+    //     margin-bottom: 0;
+    // }
+    //     .signup-signin .login-form .facebook-btn{
+    //         margin-bottom: 0;
+    //     }
 }
 
 

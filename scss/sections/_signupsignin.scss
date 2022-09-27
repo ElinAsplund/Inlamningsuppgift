@@ -1,0 +1,132 @@
+.signup-signin{
+
+    .container{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin: 0;
+        width: 100%;
+
+        @include sm{
+            margin: auto;
+        }
+        @include md{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        @include lg{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            align-items: flex-start;
+        }
+    }
+
+    .form-theme{
+        @include md{
+            width: 516px;
+        }
+        @include lg{
+            width: 100%;
+        }
+    }
+
+    #signinForm{
+
+        a{
+            color: $color-theme;
+            text-decoration: none;
+            transition: 0.2s ease-in-out;
+
+            &:hover{
+                color: $color-theme-dark;
+                text-decoration: underline;
+            }
+        }
+
+        .password-query{
+            @include sm{
+                flex-direction: row !important;
+            }
+        }
+    }
+
+    .login-form{
+        margin-bottom: 4rem;
+
+        @include lg{
+            margin-bottom: 0;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            p{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: $font-weight-medium;
+                margin: 0;
+                padding: 0 1rem;
+            }
+        }
+
+        .button-holder{
+            display: flex;
+            flex-direction: column;
+
+            @include sm{
+                flex-direction: row;
+            }
+
+            button{
+                color: $color-white;
+                width: 100%;
+                border: none;
+                border-radius: $border-radius-small;
+                transition: 0.2s ease-in-out;
+
+                &:hover{
+                    background-color: $color-theme-dark;
+                }
+            }
+        }
+
+        .facebook-btn{
+            position: relative;
+            background-color: #3B5998;
+            margin-bottom: 0.5rem;
+
+            @include sm{
+                margin-bottom: 0;
+            }
+        }
+        .google-btn{
+            position: relative;
+            background-color: #4285F4;
+        }
+        .facebook-btn img,
+        .google-btn img{
+            position: absolute;
+            top: center;
+            left: 1rem;
+        }  
+    }
+
+    #signupForm{
+        a{
+            color: $color-theme;
+            font-weight: $font-weight-medium;
+            text-decoration: none;
+            transition: 0.2s ease-in-out;
+
+            &:hover{
+                color: $color-theme-dark;
+                text-decoration: underline;
+            }
+        }
+    }
+} 
